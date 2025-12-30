@@ -9,18 +9,25 @@ export default function Navbar() {
     return (
         <div className="relative w-full">
             {/* Navbar itself */}
-            <div className={`relative flex justify-between bg-gray-600 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
+            <div className={`relative flex justify-between h-30 bg-gray-600 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
 
                 {/* Logo */}
-                <NavLink to='/' className="cursor-pointer">
-                    <img src="./logo.jpg" alt="" className='w-auto h-30' />
+                <NavLink to='/' className="cursor-pointer md:w-[10%]">
+                    <img src="./logo.png" alt="" className='w-25' />
                 </NavLink>
 
                 {/* Humburger for the mobile */}
                 {open ? (<CloseMenu setOpen={setOpen} />) : (<OpenMenu setOpen={setOpen} />)}
 
                 {/* Desktop Menu Navbar */}
-                <div className='hidden relative md:flex justify-center flex-col items-center gap-3 h-full px-5'>
+                <div className='w-[80%] hidden relative md:flex justify-center flex-col items-center gap-3 h-full px-5'>
+                    {/* contact */}
+                    <Contacts />
+
+                    {/* line */}
+                    <div className='w-full h-[.5px] bg-black'></div>
+
+                    {/* Navbar Links */}
                     <Navlink />
                 </div>
             </div>
@@ -96,4 +103,26 @@ function CloseMenu({ setOpen }) {
             </svg>
         </div>
     );
+}
+
+
+// Navbar Contact information
+
+function Contacts(){
+    return (
+        <div className='w-full flex justify-between items-center'>
+            <div className='flex justify-center items-center gap-2'>
+                <PhoneCall size={20} />
+                9846847988
+            </div>
+            <div className='flex justify-center items-center gap-2'>
+                <Mail size={20} />
+                9846847988
+            </div>
+            <div className='flex justify-center items-center gap-2'>
+                <MapPin size={20} />
+                9846847988
+            </div>
+        </div>
+    )
 }
