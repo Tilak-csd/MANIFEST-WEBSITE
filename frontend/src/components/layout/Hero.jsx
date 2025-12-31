@@ -1,13 +1,40 @@
-import React from 'react'
-import Navbar from './Navbar'
+import { NavLink } from "react-router-dom";
+import Buttons from "../ui/Buttons";
 
-export default function Hero() {
+const Hero = () => {
   return (
-    <section>
-        <Navbar />
-        <div id="hero-section" className=''>
+    <section className="relative h-[calc(100vh-120px)] w-full overflow-hidden">
+      {/* Background Image with Dark Overlay */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          // Replace with your actual image path
+          backgroundImage: `url('./images/manifest_reception photo.avif')`
+        }}
+      >
+        {/* The Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
 
-        </div>
+      {/* Content Container */}
+      <div className="relative z-10 flex gap-4 h-full flex-col items-center justify-center px-4 text-center text-white">
+
+        {/* Main Headline */}
+        <h1 className="text-4xl font-bold md:text-6xl lg:text-7xl">
+          Clear Your Vision <br /> 
+          {/* <span className="mt-2 text-3xl md:4xl lg:text-5xl block">Manifest Your Future</span> */}
+        </h1>
+
+        {/* Sub-headline */}
+        <p className="max-w-2xl text-md mb-4 font-light md:text-lg lg:text-xl">
+          Helping students and professionals succeed in over 8 countries with a 98% visa success rate.
+        </p>
+
+        {/* CTA Button */}
+        <Buttons label={"Get Start Now"} to={'/contact'}></Buttons>
+      </div>
     </section>
-  )
-}
+  );
+};
+
+export default Hero;

@@ -7,7 +7,7 @@ export const Navbarlink = [
         title : "About Us",
         to : "#aboutus"
     },{
-        title: "Service",
+        title: "Services",
         to : '#service'
     },{
         title : "Countries",

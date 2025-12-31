@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Facebook, Instagram, Twitter, PhoneCall, Mail, MapPin } from 'lucide-react';
 import { NavLink } from "react-router-dom"
 import { Navbarlink } from '../../data/NavbarLink';
+import Buttons from '../ui/Buttons';
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
     return (
         <div className="relative w-full">
             {/* Navbar itself */}
-            <div className={`relative flex justify-between h-30 bg-gray-600 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
+            <div className={`relative flex justify-between h-30 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
 
                 {/* Logo */}
                 <NavLink to='/' className="cursor-pointer md:w-[10%]">
@@ -20,12 +21,12 @@ export default function Navbar() {
                 {open ? (<CloseMenu setOpen={setOpen} />) : (<OpenMenu setOpen={setOpen} />)}
 
                 {/* Desktop Menu Navbar */}
-                <div className='w-[80%] hidden relative md:flex justify-center flex-col items-center gap-3 h-full px-5'>
+                <div className='w-[80%] hidden relative md:flex justify-center flex-col items-center gap-2 h-full px-5'>
                     {/* contact */}
                     <Contacts />
 
                     {/* line */}
-                    <div className='w-full h-[.5px] bg-black'></div>
+                    <div className='w-full h-[.5px] bg-gray-400'></div>
 
                     {/* Navbar Links */}
                     <Navlink />
@@ -56,7 +57,9 @@ function Navlink() {
                     </li>
                 })}
             </ul>
-            <NavLink to='/contact' className="px-6 py-3 rounded-md bg-red-500 hover:scale-105 transform transition-all text-white font-semibold">APPLY NOW</NavLink>
+
+            <Buttons label={'APPLY NOW'} to={'/contact'}></Buttons>
+
         </div>
     );
 }
@@ -73,13 +76,6 @@ function MobileNavlink({ setOpen }) {
                     </NavLink>
                 </li>
             })}
-
-            <div className='flex justify-center items-center gap-6'>
-                <a href="" className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Facebook size={20} color='white' /></a>
-                <a href="https://www.instagram.com/solveatlas.agency?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank' className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Instagram size={20} color='white' /></a>
-                <a href="" className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Twitter size={20} color='white' /></a>
-
-            </div>
 
         </ul>
     );
@@ -108,20 +104,20 @@ function CloseMenu({ setOpen }) {
 
 // Navbar Contact information
 
-function Contacts(){
+function Contacts() {
     return (
         <div className='w-full flex justify-between items-center'>
-            <div className='flex justify-center items-center gap-2'>
-                <PhoneCall size={20} />
-                9846847988
+            <div className='flex justify-center items-center gap-1'>
+                <PhoneCall size={18} />
+                <p>9846847988</p>
             </div>
-            <div className='flex justify-center items-center gap-2'>
-                <Mail size={20} />
-                9846847988
+            <div className='flex justify-center items-center gap-1'>
+                <Mail size={18} />
+                <p> manifest@gmail.com</p>
             </div>
-            <div className='flex justify-center items-center gap-2'>
-                <MapPin size={20} />
-                9846847988
+            <div className='flex justify-center items-center gap-1'>
+                <MapPin size={18} />
+                <p>( Opposite to Start Mall) Putalisadak, Kathmandu</p>
             </div>
         </div>
     )
