@@ -14,7 +14,7 @@ export default function Services() {
             {/* Our Services Cards */}
             <div className='flex justify-center items-center flex-wrap gap-6 max-w-7xl mx-auto mt-10'>
                 {servicesData.map((service, index)=>{
-                    return <ServiceCard key={index} icon={service.icon} title={service.title} description={service.description} />
+                    return <ServiceCard key={index} index={index} url={service.img} title={service.title} description={service.description} />
                 })}
 
             </div>
