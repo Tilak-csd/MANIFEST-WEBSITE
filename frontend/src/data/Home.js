@@ -1,6 +1,3 @@
-import { title } from "process";
-import { deserialize } from "v8";
-
 export const countries = [
     { name: "France", to : '/france', img: "./images/country/franch.webp" },
     { name: "Canada", to : '/canada', img: "./images/country/canada.webp" },

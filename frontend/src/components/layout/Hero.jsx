@@ -3,7 +3,7 @@ import Buttons from "../ui/Buttons";
 
 const Hero = () => {
   return (
-    <section className="relative h-[calc(100vh-120px)] w-full overflow-hidden">
+    <section className="relative h-[calc(100vh-120px)] w-full overflow-hidden font-poppins">
       {/* Background Image with Dark Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="relative z-10 flex gap-4 h-full flex-col items-center justify-center px-4 text-center text-white">
 
         {/* Main Headline */}
-        <h1 className="text-4xl font-bold md:text-6xl lg:text-7xl">
+        <h1 className="text-4xl font-bold md:text-6xl lg:text-7xl font-serif">
           Clear Your Vision <br /> 
           {/* <span className="mt-2 text-3xl md:4xl lg:text-5xl block">Manifest Your Future</span> */}
         </h1>

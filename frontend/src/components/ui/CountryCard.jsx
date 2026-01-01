@@ -6,7 +6,7 @@ export default function CountryCard({index, url, country, to}) {
     return (
         <div
             key={index}
-            className="group relative h-50 w-80 overflow-hidden rounded-md shadow-lg "
+            className="group relative h-50 w-80 overflow-hidden rounded-md shadow-lg font-poppins "
         >
             {/* 2. The Image with scale-110 on group-hover */}
             <img
@@ -20,7 +20,7 @@ export default function CountryCard({index, url, country, to}) {
 
             {/* 4. Center Content */}
             <div className="relative z-10 flex h-full flex-col items-center justify-center text-white p-4">
-                <h3 className="mb-2 text-2xl md:text-3xl font-semibold tracking-tight">
+                <h3 className="mb-2 text-xl md:text-2xl font-semibold tracking-tight">
                     Study in {country}
                 </h3>
 

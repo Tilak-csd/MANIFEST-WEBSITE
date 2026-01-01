@@ -6,9 +6,8 @@ import Buttons from '../ui/Buttons';
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-
     return (
-        <div className="relative w-full">
+        <div className="relative w-full font-poppins">
             {/* Navbar itself */}
             <div className={`relative flex justify-between h-30 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
 
@@ -83,7 +82,7 @@ function MobileNavlink({ setOpen }) {
 
 function OpenMenu({ setOpen }) {
     return (
-        <div className="p-2 cursor-pointer md:hidden text-white" onClick={() => setOpen(prev => !prev)}>
+        <div className="p-2 cursor-pointer md:hidden text-black" onClick={() => setOpen(prev => !prev)}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6">
                 <path fillRule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75Zm7 10.5a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1-.75-.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Z" clipRule="evenodd" />
             </svg>
@@ -106,7 +105,7 @@ function CloseMenu({ setOpen }) {
 
 function Contacts() {
     return (
-        <div className='w-full flex justify-between items-center'>
+        <div className='w-full flex justify-between items-center text-gray-500 text-md'>
             <div className='flex justify-center items-center gap-1'>
                 <PhoneCall size={18} />
                 <p>9846847988</p>

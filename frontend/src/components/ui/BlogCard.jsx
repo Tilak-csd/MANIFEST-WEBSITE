@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const BlogCard = ({index, url, title, description, to}) => {
     return (
-        <div className='w-80 shadow rounded-md overflow-hidden'>
+        <div className='w-80 h-100 shadow rounded-md overflow-hidden'>
             {/* Blue Header Section */}
             <div className="bg-[#1e2a78] h-24 w-full relative">
                 {/* Floating Thumbnail Image */}
@@ -18,11 +18,11 @@ const BlogCard = ({index, url, title, description, to}) => {
 
             {/* Content Section */}
             <div className="pt-14 px-6 pb-8 ">
-                <h2 className="text-[#1e2a78] text-2xl font-bold leading-tight mb-4">
+                <h2 className="text-[#1e2a78] text-xl font-bold leading-tight mb-4">
                     {title}
                 </h2>
 
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-6">
                     {description}
                 </p>
 

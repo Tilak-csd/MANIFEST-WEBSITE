@@ -6,6 +6,7 @@ import Countries from '../components/common/Countries'
 import Services from '../components/common/Services'
 import TrustedSection from '../components/common/Trusted'
 import BlogSection from '../components/common/BlogSection'
+import Footer from '../components/layout/Footer'
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <Services />
             <TrustedSection />
             <BlogSection />
+            <Footer />
         </>
     )
 }

@@ -5,9 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [tailwindcss(), react()],
-  // define:{
-  //   'process.env': {},
-  //   'process.title': JSON.stringify('browser'),
-  // }
+  plugins: [tailwindcss(), react()]
 })

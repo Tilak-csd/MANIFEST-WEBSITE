@@ -5,7 +5,7 @@ import Buttons from '../ui/Buttons';
 const TrustedSection = () => {
     return (
         <section
-            className="relative h-80 w-full flex items-center justify-center overflow-hidden bg-fixed bg-center bg-cover"
+            className="relative h-80 w-full flex items-center justify-center overflow-hidden bg-fixed bg-center bg-cover font-poppins"
             style={{
                 // Replace with your actual image URL
                 backgroundImage: `url('./trusted_bg1.webp')`
@@ -15,13 +15,13 @@ const TrustedSection = () => {
             <div className="absolute inset-0 bg-black/50"></div>
 
             {/* Content Container */}
-            <div className="relative z-10 text-center px-4 max-w-4xl mx-auto text-white">
+            <div className="relative z-10 text-center px-4 max-w-5xl mx-auto text-white">
                 <motion.h1
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.6 }}
-                    className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+                    className="text-3xl md:text-5xl font-bold mb-4 font-serif drop-shadow-lg">
                     Trusted by More Than 5000 Students
                 </motion.h1>
 

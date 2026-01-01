@@ -14,7 +14,7 @@ const AboutSection = () => {
     ];
 
     return (
-        <section className="bg-slate-50 py-20 px-6 font-sans">
+        <section className="bg-slate-50 py-20 px-6 font-poppins">
             <div className="max-w-6xl mx-auto text-center">
 
                 {/* Header Content */}
@@ -27,7 +27,7 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.4 }}
                         transition={{ duration: 0.6 }}
-                        className="text-4xl font-inter md:text-5xl font-extrabold text-[#D32F2F] tracking-tight uppercase"
+                        className="text-4xl font-serif md:text-5xl font-extrabold text-[#D32F2F] tracking-tight uppercase"
                     >
                         Welcome to the Manifest
                     </motion.h2>

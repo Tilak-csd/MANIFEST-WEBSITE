@@ -11,7 +11,7 @@ export default function ServiceCard({ index, url, title, description }) {
             }}
             viewport={{ once: true, amount: .4 }}
             transition={{ duration: 0.6, delay: index * .1 }}
-            className='w-80 flex justify-center items-center flex-col text-center h-70 px-6 py-8 rounded-md shadow-md'>
+            className='w-80 flex justify-center font-poppins items-center flex-col text-center h-70 px-6 py-8 rounded-md shadow-md'>
             {/* our service icon */}
             <img src={url} alt={title} className='w-18' />
 
