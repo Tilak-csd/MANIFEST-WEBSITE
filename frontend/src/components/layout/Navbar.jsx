@@ -46,7 +46,7 @@ export default function Navbar() {
 function Navlink() {
     return (
         <div className='flex justify-between items-center w-full gap-6'>
-            <ul className="flex justify-center items-center gap-6 font-sans text-lg md:flex-row md:h-[full]  ">
+            <ul className="flex justify-center items-center gap-6 font-poppins text-lg md:flex-row md:h-[full]  ">
                 {Navbarlink.map((links, idx) => {
                     return <li key={idx}>
                         <NavLink to={links.to} className="group relative text-black transition duration-300 hover:text-red-500">
@@ -66,7 +66,7 @@ function Navlink() {
 // Navlink for Mobile
 function MobileNavlink({ setOpen }) {
     return (
-        <ul className="flex flex-col justify-center items-center gap-6 font-sans text-md md:flex-row md:h-[full]  ">
+        <ul className="flex flex-col justify-center items-center gap-6 font-poppins text-md md:flex-row md:h-[full]  ">
             {Navbarlink.map((links, idx) => {
                 return <li key={idx}>
                     <NavLink to={links.to} onClick={() => setOpen(prev => !prev)} className="group relative text-white transition duration-300">
@@ -105,7 +105,7 @@ function CloseMenu({ setOpen }) {
 
 function Contacts() {
     return (
-        <div className='w-full flex justify-between items-center text-gray-500 text-md'>
+        <div className='w-full flex justify-between items-center font-poppins text-gray-500 text-md'>
             <div className='flex justify-center items-center gap-1'>
                 <PhoneCall size={18} />
                 <p>9846847988</p>
