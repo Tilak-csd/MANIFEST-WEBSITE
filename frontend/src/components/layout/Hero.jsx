@@ -9,7 +9,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           // Replace with your actual image path
-          backgroundImage: `url('./images/manifest_reception photo.avif')`
+          backgroundImage: `url('./images/reception photo.avif')`
         }}
       >
         {/* The Dark Overlay */}

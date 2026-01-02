@@ -53,19 +53,19 @@ export const blogs=[
   {
     title : "Join Our Expert-Led IELTS Classes – Just Rs. 2,999!",
     description : "Affordable IELTS coaching with certified instructors, weekly mock tests, and full study materials—join now and boost your score.",
-    img: "",
+    img: "#",
     to : "/blog/ilets_offer"
   },
   {
     title : "How to write a Powerful SOP (Statement of Purpose)",
     description :"Write an SOP that gets noticed. Simple structure, expert tips, and examples to help you succeed in 2025.",
-    img: "",
+    img: "#",
     to : "/blog/sop_write"
   },
   {
     title : "5 Steps to Apply for a Student Visa to USA - 2025 Guide",
     description :"Dreaming of studying in USA? Here’s a step-by-step guide that walks you through the entire student vida process-from preparing documents to receiving your visa approval in 2025.",
-    img: "",
+    img: "#",
     to : "/blog/Usa_apply_steps"
   }
 ]

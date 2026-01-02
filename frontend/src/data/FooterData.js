@@ -1,13 +1,9 @@
+import { Linkedin, Instagram, Facebook } from "lucide-react";
+
 export const footerData = {
   about: {
     title: "Manifest Education Consultancy",
-    description: "Journey International Education is a trusted consultancy in Kathmandu helping students achieve their dream of studying abroad with expert guidance, visa support, and IELTS preparation.",
-    socials: [
-      { name: 'Instagram', icon: 'ri-instagram-line', href: '#' },
-      { name: 'Facebook', icon: 'ri-facebook-fill', href: '#' },
-      { name: 'WhatsApp', icon: 'ri-whatsapp-line', href: '#' },
-      { name: 'LinkedIn', icon: 'ri-linkedin-fill', href: '#' },
-    ]
+    description: "Journey International Education is a trusted consultancy in Kathmandu helping students achieve their dream of studying abroad with expert guidance, visa support, and IELTS preparation."
   },
   destinations: [
     "Study in UK", "Study in USA", "Study in Malaysia", 
