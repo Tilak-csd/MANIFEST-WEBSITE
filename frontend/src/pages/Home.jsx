@@ -17,7 +17,7 @@ export default function Home() {
             <Countries />
             <Services />
             <TrustedSection />
-            <BlogSection />
+            <BlogSection title={"NEWS AND BLOGS"} />
             <Footer />
         </>
     )

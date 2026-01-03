@@ -1,8 +1,9 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
+import Buttons from '../ui/Buttons';
 
-const HeroSection = () => {
+const HeroSection = ({pageName="", to="", Heading="", description="", url=""}) => {
     return (
         <section className="relative w-full px-8 py-4 overflow-hidden bg-slate-100 font-poppins">
             <div>
@@ -11,15 +12,26 @@ const HeroSection = () => {
                         Home
                     </NavLink>
                     <ChevronRight />
-                    <NavLink to='/blog' className='text-red-500'>
-                        Blogs & News</NavLink>
+                    <NavLink to={to} className='text-red-500'>
+                        {pageName}</NavLink>
                 </div>
-                <div className='w-full h-60 my-2 object-cover' style={{backgroundImage:'url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070")'}}>
-                    
+                <div
+                    className="relative w-full h-80 my-2 bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: `url("${url}")` }}
+                >
+                    {/* Overlay Layer */}
+                    <div className="absolute inset-0 bg-black/60"></div>
+
+                    {/* Content (Optional) */}
+                    <div className="relative h-full flex items-center justify-center flex-col gap-4">
+                        <h2 className="text-white text-5xl font-bold">{Heading}</h2>
+                        <p className='text-white text-lg font-medium'>{description}</p>
+                        <Buttons label={'Apply Now'} to={'/contact'} />
+                    </div>
                 </div>
             </div>
         </section>
     );
 };
 
-export default HeroSection;``
+export default HeroSection; ``
