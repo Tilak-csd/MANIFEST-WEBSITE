@@ -3,16 +3,50 @@ import { Linkedin, Instagram, Facebook } from "lucide-react";
 export const footerData = {
   about: {
     title: "Manifest Education Consultancy",
-    description: "Journey International Education is a trusted consultancy in Kathmandu helping students achieve their dream of studying abroad with expert guidance, visa support, and IELTS preparation."
+    description: "Manifest Education Consultancy is a trusted consultancy in Kathmandu helping students achieve their dream of studying abroad with expert guidance, visa support, and IELTS preparation."
   },
   destinations: [
-    "Study in UK", "Study in USA", "Study in Malaysia", 
-    "Study in France", "Study in Australia", "Study in Japan", 
-    "Study in S. Korea", "Study in Canada"
+    {
+      title :"Study in UK",
+      to : "/country/uk"
+    },{
+      title:  "Study in USA",
+      to : "/country/usa"
+    },{
+      title:  "Study in Malaysia",
+      to : "/country/malaysia"
+    },{
+      title:  "Study in France",
+      to : "/country/france"
+    },{
+      title:  "Study in Australia",
+      to : "/country/australia"
+    },{
+      title:  "Study in Japan",
+      to : "/country/japan"
+    },{
+      title:  "Study in South Korea",
+      to : "/country/south-korea"
+    },{
+      title:  "Study in Canada",
+      to : "/country/canada"
+    }
   ],
   services: [
-    "Admission", "Visa Support", "IELTS Classes", 
-    "Documentation", "Test Preparation"
+    {
+      title : "Addmission",
+      to : "/contact"
+    },{
+      title:  "IELTS Classes",
+      to : "/blog/itels"
+    },{
+      title:  "Documentation",
+      to : "/service/documentation"
+    },{
+      title:  "Test Preparation",
+      to : "/service/test_preparation"
+    }
+
   ],
   contact: {
     phones: ["01-5922253", "9851363253"],

@@ -16,7 +16,7 @@ const HeroSection = ({pageName="", to="", Heading="", description="", url=""}) =
                         {pageName}</NavLink>
                 </div>
                 <div
-                    className="relative w-full h-80 my-2 bg-cover bg-center bg-no-repeat"
+                    className="relative w-full h-80 my-2 bg-cover bg-fixed bg-center bg-no-repeat"
                     style={{ backgroundImage: `url("${url}")` }}
                 >
                     {/* Overlay Layer */}
@@ -25,7 +25,7 @@ const HeroSection = ({pageName="", to="", Heading="", description="", url=""}) =
                     {/* Content (Optional) */}
                     <div className="relative h-full flex items-center justify-center flex-col gap-4">
                         <h2 className="text-white text-5xl font-bold">{Heading}</h2>
-                        <p className='text-white text-lg font-medium'>{description}</p>
+                        <p className='text-white text-lg text-center font-medium'>{description}</p>
                         <Buttons label={'Apply Now'} to={'/contact'} />
                     </div>
                 </div>

@@ -8,11 +8,11 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#D32F2F] text-white py-8 px-6 font-poppins">
-      <div className=" w-full">
+      <div className="w-full">
         {/* Changed to a 12-column grid for finer width control */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-14 gap-6 mb-8">
 
-          {/* About Section - Occupies 4 out of 12 columns */}
+          {/* About Section */}
           <div className="lg:col-span-5">
             <h3 className="text-[1.3rem] font-serif font-semibold mb-2">{about.title}</h3>
             <p className="text-md leading-relaxed mb-6 text-[#ccc] max-w-md font-poppins">
@@ -28,7 +28,6 @@ const Footer = () => {
               <a href="#" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors">
                 <Linkedin size={18} />
               </a>
-              {/* Corrected WhatsApp SVG Link */}
               <a href="#" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -42,27 +41,35 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Destinations - Occupies 2 out of 12 columns */}
+          {/* Destinations Section */}
           <div className="lg:col-span-3">
             <h3 className="text-[1.3rem] font-semibold mb-2 font-serif">Study Destination</h3>
             <ul className="space-y-1 text-md text-[#ccc] font-poppins">
-              {destinations.map((item) => (
-                <li key={item}><a href="#" className="hover:text-white">{item}</a></li>
+              {destinations.map((item, index) => (
+                <li key={index}>
+                  <NavLink to={item.to} className="hover:text-white transition-colors">
+                    {item.title}
+                  </NavLink>
+                </li>
               ))}
             </ul>
           </div>
 
-          {/* Services - Occupies 2 out of 12 columns */}
+          {/* Services Section */}
           <div className="lg:col-span-2">
             <h3 className="text-[1.3rem] font-semibold mb-2 font-serif">Services</h3>
             <ul className="text-md text-[#ccc] font-poppins">
-              {services.map((item) => (
-                <li key={item} className='my-1'><a href="#" className="hover:text-white">{item}</a></li>
+              {services.map((item, index) => (
+                <li key={index} className='my-1'>
+                  <NavLink to={item.to} className="hover:text-white transition-colors">
+                    {item.title}
+                  </NavLink>
+                </li>
               ))}
             </ul>
           </div>
 
-          {/* Contact - Occupies 4 out of 12 columns to fit the button and long address */}
+          {/* Contact Section */}
           <div className="lg:col-span-4">
             <h3 className="text-[1.3rem] font-semibold mb-2 font-serif ">Contact</h3>
             <div className="text-md space-y-1 text-[#ccc] mb-8 font-poppins">
@@ -71,17 +78,19 @@ const Footer = () => {
               <p><span>Address :</span> {contact.address}</p>
             </div>
 
-            <NavLink to='/contact' className="bg-white text-black px-6 py-3 rounded-md hover:bg-black hover:text-white hover:scale-105 transform transition-all" >
+            <NavLink 
+              to='/contact' 
+              className="inline-block bg-white text-black px-6 py-3 rounded-md hover:bg-black hover:text-white hover:scale-105 transform transition-all duration-300"
+            >
               Book a Free Consultant
-
             </NavLink>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-center md:justify-between items-center  text-center text-sm text-[#ccc]">
+        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-center md:justify-between items-center text-center text-sm text-[#ccc]">
           <p>© {new Date().getFullYear()} MANIFEST EDU. CONSULTANCY | All Right Reserved</p>
-          <p className="mt-4 md:mt-0">Designed And Developed By <a href='https://www.instagram.com/its_zorotz/' target='_blank'>Tilak Gubhaju</a></p>
+          <p className="mt-4 md:mt-0">Designed And Developed By <a href='https://www.instagram.com/its_zorotz/' target='_blank' rel="noreferrer">Tilak Gubhaju</a></p>
         </div>
       </div>
     </footer>
