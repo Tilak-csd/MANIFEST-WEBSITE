@@ -13,6 +13,7 @@ import France from "./pages/France"
 import ScrollToTop from "./ScrollToTop"
 import Navbar from "./components/layout/Navbar"
 import Footer from "./components/layout/Footer"
+import Gallery from "./pages/Gallery"
 import NotFound from "./pages/NotFound"
 
 export default function App() {
@@ -26,7 +27,8 @@ export default function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/blog' element={<Blogs />} />
 
-        
+
+        <Route path='/gallery' element={<Gallery />} />
         <Route path='/country/usa' element={<USA />} />
         <Route path='/country/canada' element={<Canada />} />
         <Route path='/country/uk' element={<UK />} />
