@@ -9,16 +9,14 @@ import DocumentSection from '../components/common/DocumentSection'
 export default function UK() {
   return (
     <>
-        <Navbar />
 
-        <HeroSection to='/country/uk' pageName='UK' description='World Class Education, Countless Opportunities' Heading='Study In UK' url='../images/country/header_banner.webp' />
+        <HeroSection to='/country/uk' pageName='UK' description='Prestigious Education, Global Recognition' Heading='Study In UK' url='../images/country/header_banner.webp' />
 
-        <WhySection country={'uk'} title='Why Choose The Uk For Higher Education?' description='The UK offers world-renowned universities, diverse programs, and unmatched career opportunities. With a flexible education system, cutting-edge research, and global exposure, it’s the top choice for students aiming for academic and professional success.'/>
+        <WhySection country={'uk'} title='Why Choose The Uk For Higher Education?' description='The UK combines historic academic excellence with modern, flexible learning. With globally recognized universities, shorter course durations, and post-study work options, it’s a smart choice for international students.'/>
 
         <Course />
         <DocumentSection countryName='UK' />
 
-        <Footer />
     </>
   )
 }

@@ -2,16 +2,17 @@ import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import Buttons from '../ui/Buttons';
+import { motion } from 'framer-motion'
 
-const HeroSection = ({pageName="", to="", Heading="", description="", url=""}) => {
+const HeroSection = ({ pageName = "", to = "", Heading = "", description = "", url = "" }) => {
     return (
         <section className="relative w-full px-8 py-4 overflow-hidden bg-slate-100 font-poppins">
             <div>
-                <div className='flex items-center text-lg'>
+                <div className='flex items-center text-md'>
                     <NavLink to='/'>
                         Home
                     </NavLink>
-                    <ChevronRight />
+                    <ChevronRight size={'20px'}/>
                     <NavLink to={to} className='text-red-500'>
                         {pageName}</NavLink>
                 </div>
@@ -24,9 +25,33 @@ const HeroSection = ({pageName="", to="", Heading="", description="", url=""}) =
 
                     {/* Content (Optional) */}
                     <div className="relative h-full flex items-center justify-center flex-col gap-4">
-                        <h2 className="text-white text-5xl font-bold">{Heading}</h2>
-                        <p className='text-white text-lg text-center font-medium'>{description}</p>
+                        <motion.h2
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: .6 }}
+                            transition={{ duration: .6, delay: .2 }}
+                            className="text-white text-5xl font-bold">
+
+                            {Heading}
+
+                        </motion.h2>
+                        <motion.p
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: .6 }}
+                            transition={{ duration: .6, delay: .3 }}
+                            className='text-white text-lg text-center font-medium'>
+
+                            {description}
+
+                        </motion.p>
+                        <motion.div
+                        initial={{opacity:0, y:40}}
+                        whileInView={{opacity:1, y:0}}
+                        viewport={{once:true, amount:.6}}
+                        transition={{duration:.6, delay:.4}}>
                         <Buttons label={'Apply Now'} to={'/contact'} />
+                        </motion.div>
                     </div>
                 </div>
             </div>

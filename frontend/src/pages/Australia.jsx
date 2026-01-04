@@ -9,16 +9,16 @@ import DocumentSection from '../components/common/DocumentSection'
 export default function Australia() {
   return (
     <>
-        <Navbar />
 
-        <HeroSection to='/country/australia' pageName='Australia' description='World Class Education, Countless Opportunities' Heading='Study In Australia' url='../images/country/header_banner.webp' />
 
-        <WhySection country={'australia'} title='Why Choose The Australia For Higher Education?' description='The UK offers world-renowned universities, diverse programs, and unmatched career opportunities. With a flexible education system, cutting-edge research, and global exposure, it’s the top choice for students aiming for academic and professional success.'/>
+        <HeroSection to='/country/australia' pageName='Australia' description='Globally Recognized Degrees, Laid-Back Lifestyle' Heading='Study In Australia' url='../images/country/header_banner.webp' />
+
+        <WhySection country={'australia'} title='Why Choose The Australia For Higher Education?' description="Australia is home to top-ranked universities, industry-relevant education, and a high quality of life. With strong post-study work rights and a diverse student community, it's an ideal destination for academic and career success."/>
 
         <Course />
         <DocumentSection countryName='Australia' />
 
-        <Footer />
+ 
     </>
   )
 }

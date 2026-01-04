@@ -264,7 +264,7 @@ export const FacilitiesData = {
         }
     ],
 
-    "south-korea" : [
+    southkorea : [
         {
             "id": 1,
             "title": "Top-Tier Universities",
@@ -327,11 +327,80 @@ export const SubjectData = [
     },
 ];
 
-export const requirementsData = [
-    { id: 1, title: "Valid Passport", icon: Languages },
-    { id: 2, title: "IELTS / PTE / TOEFL Score", icon: Languages },
-    { id: 3, title: "Statement of Purpose (SOP)", icon: FileText },
-    { id: 4, title: "Letter(s) of Recommendation", icon: UserRoundPen },
-    { id: 5, title: "Academic Transcripts & Certificates", icon: GraduationCap },
-    { id: 6, title: "Letter of Acceptance (LOA)", icon: University },
+
+import { 
+    faPassport, 
+    faGraduationCap, 
+    faFileSignature, 
+    faLanguage, 
+    faFileAlt, 
+    faMoneyCheckAlt, 
+    faUniversity, 
+    faStethoscope 
+} from '@fortawesome/free-solid-svg-icons';
+
+// Base icons and common items
+const commonDocs = [
+    { id: 101, topic: "Valid Passport", icon: faPassport },
+    { id: 102, topic: "Academic Transcripts & Certificates", icon: faGraduationCap },
+    { id: 103, topic: "Letter(s) of Recommendation", icon: faFileSignature },
 ];
+
+export const RequiredDocument = {
+    usa: [
+        ...commonDocs,
+        { id: 1, topic: "IELTS / TOEFL / Duolingo Score", icon: faLanguage },
+        { id: 2, topic: "Statement of Purpose (SOP)", icon: faFileAlt },
+        { id: 3, topic: "Financial Documents", icon: faMoneyCheckAlt },
+        { id: 4, topic: "I-20 / Admission Letter", icon: faUniversity },
+    ],
+    uk: [
+        ...commonDocs,
+        { id: 5, topic: "IELTS / PTE / TOEFL Score", icon: faLanguage },
+        { id: 6, topic: "Personal Statement", icon: faFileAlt },
+        { id: 7, topic: "CAS Letter from University", icon: faUniversity },
+        { id: 8, topic: "Proof of Funds (28-day bank statement)", icon: faMoneyCheckAlt },
+    ],
+    canada: [
+        ...commonDocs,
+        { id: 9, topic: "IELTS / PTE / TOEFL Score", icon: faLanguage },
+        { id: 10, topic: "Statement of Purpose (SOP)", icon: faFileAlt },
+        { id: 11, topic: "Letter of Acceptance (LOA)", icon: faUniversity },
+        { id: 12, topic: "Proof of Funds (GIC or Bank Statement)", icon: faMoneyCheckAlt },
+    ],
+    australia: [
+        ...commonDocs,
+        { id: 13, topic: "IELTS / PTE / TOEFL Score", icon: faLanguage },
+        { id: 14, topic: "Statement of Purpose (SOP)", icon: faFileAlt },
+        { id: 15, topic: "Confirmation of Enrollment (CoE)", icon: faUniversity },
+        { id: 16, topic: "Proof of Funds (Bank Statement)", icon: faMoneyCheckAlt },
+    ],
+    japan: [
+        ...commonDocs,
+        { id: 17, topic: "IELTS / TOEFL / JLPT N4 N3 N2", icon: faLanguage },
+        { id: 18, topic: "Statement of Purpose (SOP)", icon: faFileAlt },
+        { id: 19, topic: "University Admission Letter / COE", icon: faUniversity },
+        { id: 20, topic: "Proof of Financial Support", icon: faMoneyCheckAlt },
+    ],
+    south_korea: [
+        ...commonDocs,
+        { id: 21, topic: "IELTS / TOEFL or TOPIK Level 2+", icon: faLanguage },
+        { id: 22, topic: "Statement of Purpose (SOP)", icon: faFileAlt },
+        { id: 23, topic: "University Admission Letter / GKS Nomination", icon: faUniversity },
+        { id: 24, topic: "Proof of Financial Support", icon: faMoneyCheckAlt },
+    ],
+    france: [
+        ...commonDocs,
+        { id: 25, topic: "IELTS / TCF / TEF / TOEFL Score", icon: faLanguage },
+        { id: 26, topic: "Statement of Purpose (SOP)", icon: faFileAlt },
+        { id: 27, topic: "University Acceptance Letter", icon: faUniversity },
+        { id: 28, topic: "Proof of Funds & Accommodation", icon: faMoneyCheckAlt },
+    ],
+    malaysia: [
+        ...commonDocs,
+        { id: 29, topic: "Statement of Purpose (SOP)", icon: faFileAlt },
+        { id: 30, topic: "Medical Report (EMGS Requirement)", icon: faStethoscope },
+        { id: 31, topic: "Offer Letter from University", icon: faUniversity },
+        { id: 32, topic: "Proof of Funds", icon: faMoneyCheckAlt },
+    ],
+};

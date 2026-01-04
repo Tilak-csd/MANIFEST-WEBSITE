@@ -9,16 +9,15 @@ import DocumentSection from '../components/common/DocumentSection'
 export default function Canada() {
   return (
    <>
-        <Navbar />
 
-        <HeroSection to='/country/canada' pageName='Canada' description='World Class Education, Countless Opportunities' Heading='Study In Canada' url='../images/country/header_banner.webp' />
 
-        <WhySection country={'canada'} title='Why Choose The USA For Higher Education?' description='The USA offers world-renowned universities, diverse programs, and unmatched career opportunities. With a flexible education system, cutting-edge research, and global exposure, it’s the top choice for students aiming for academic and professional success.'/>
+        <HeroSection to='/country/canada' pageName='Canada' description='Quality Education, Welcoming Culture' Heading='Study In Canada' url='../images/country/header_banner.webp' />
+
+        <WhySection country={'canada'} title='Why Choose The USA For Higher Education?' description="Canada is known for its high-quality education, affordable tuition, and safe, inclusive society. With globally respected universities, post-graduation work opportunities, and stunning natural surroundings, it's a top choice for students worldwide."/>
 
         <Course />
         <DocumentSection countryName='USA' />
 
-        <Footer />
     </>
   )
 }

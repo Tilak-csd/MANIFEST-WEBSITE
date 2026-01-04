@@ -9,16 +9,14 @@ import DocumentSection from '../components/common/DocumentSection'
 export default function Malaysia() {
   return (
     <>
-        <Navbar />
 
-        <HeroSection to='/country/malaysia' pageName='Malaysia' description='World Class Education, Countless Opportunities' Heading='Study In Malaysia' url='../images/country/header_banner.webp' />
+        <HeroSection to='/country/malaysia' pageName='Malaysia' description='Quality Education, Affordable Living in Asia’s Heart' Heading='Study In Malaysia' url='../images/country/header_banner.webp' />
 
-        <WhySection country={'malaysia'} title='Why Choose The Malaysia For Higher Education?' description='The UK offers world-renowned universities, diverse programs, and unmatched career opportunities. With a flexible education system, cutting-edge research, and global exposure, it’s the top choice for students aiming for academic and professional success.'/>
+        <WhySection country={'malaysia'} title='Why Choose The Malaysia For Higher Education?' description='Malaysia combines affordable education, cultural diversity, and academic excellence. With top-ranked local and international branch campuses, students enjoy globally recognized degrees and a welcoming environment at a lower cost.'/>
 
         <Course />
         <DocumentSection countryName='Malaysia' />
 
-        <Footer />
     </>
   )
 }

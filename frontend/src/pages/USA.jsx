@@ -9,7 +9,6 @@ import DocumentSection from '../components/common/DocumentSection'
 export default function USA() {
   return (
     <>
-        <Navbar />
 
         <HeroSection to='/country/usa' pageName='USA' description='World Class Education, Countless Opportunities' Heading='Study In USA' url='../images/country/header_banner.webp' />
 
@@ -18,7 +17,6 @@ export default function USA() {
         <Course />
         <DocumentSection countryName='USA' />
 
-        <Footer />
     </>
   )
 }

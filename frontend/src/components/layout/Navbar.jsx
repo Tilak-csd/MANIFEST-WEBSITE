@@ -13,7 +13,7 @@ export default function Navbar() {
 
                 {/* Logo */}
                 <NavLink to='/' className="cursor-pointer md:w-[10%]">
-                    <img src="./logo.png" alt="" className='w-25' />
+                    <img src="../logo.png" alt="" className='w-25' />
                 </NavLink>
 
                 {/* Humburger for the mobile */}
@@ -46,7 +46,7 @@ export default function Navbar() {
 function Navlink() {
     return (
         <div className='flex justify-between items-center w-full gap-6'>
-            <ul className="flex justify-center items-center gap-6 font-poppins text-lg md:flex-row md:h-[full]  ">
+            <ul className="flex justify-center items-center gap-6 font-poppins text-md md:flex-row md:h-[full]  ">
                 {Navbarlink.map((links, idx) => {
                     return <li key={idx}>
                         <NavLink to={links.to} className="group relative text-black transition duration-300 hover:text-red-500">
@@ -105,17 +105,17 @@ function CloseMenu({ setOpen }) {
 
 function Contacts() {
     return (
-        <div className='w-full flex justify-between items-center font-poppins text-gray-500 text-md'>
+        <div className='w-full flex justify-between items-center font-poppins text-black text-sm'>
             <div className='flex justify-center items-center gap-1'>
-                <PhoneCall size={18} />
+                <PhoneCall size={18} color='#6b7280' />
                 <p>9846847988</p>
             </div>
             <div className='flex justify-center items-center gap-1'>
-                <Mail size={18} />
+                <Mail size={18} color='#6b7280' />
                 <p> manifest@gmail.com</p>
             </div>
             <div className='flex justify-center items-center gap-1'>
-                <MapPin size={18} />
+                <MapPin size={18} color='#6b7280' />
                 <p>( Opposite to Start Mall) Putalisadak, Kathmandu</p>
             </div>
         </div>

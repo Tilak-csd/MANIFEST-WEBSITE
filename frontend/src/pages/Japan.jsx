@@ -9,16 +9,14 @@ import DocumentSection from '../components/common/DocumentSection'
 export default function Japan() {
   return (
     <>
-        <Navbar />
 
-        <HeroSection to='/country/japan' pageName='Japan' description='World Class Education, Countless Opportunities' Heading='Study In Japan' url='../images/country/header_banner.webp' />
+        <HeroSection to='/country/japan' pageName='Japan' description='Innovation Meets Tradition in World-Class Education' Heading='Study In Japan' url='../images/country/header_banner.webp' />
 
-        <WhySection country={'japan'} title='Why Choose The Japan For Higher Education?' description='The UK offers world-renowned universities, diverse programs, and unmatched career opportunities. With a flexible education system, cutting-edge research, and global exposure, it’s the top choice for students aiming for academic and professional success.'/>
+        <WhySection country={'japan'} title='Why Choose The Japan For Higher Education?' description='Japan offers a unique blend of technological advancement and cultural depth. Its universities are globally ranked, tuition is affordable, and scholarships are widely available. Students gain access to innovation, research, and a peaceful, safe environment.'/>
 
         <Course />
         <DocumentSection countryName='Japan' />
 
-        <Footer />
     </>
   )
 }

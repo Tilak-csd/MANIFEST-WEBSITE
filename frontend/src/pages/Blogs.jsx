@@ -7,10 +7,8 @@ import BlogSection from '../components/common/BlogSection'
 export default function Blogs() {
   return (
     <>
-    <Navbar />
     <HeroSection description='See the Latest Blogs and FAQs from our Team.' to={'/blog'} Heading={'Blogs & FAQs'} pageName='Blogs & FAQs' url='./images/blog/BANNER.webp' />
     <BlogSection />
-    <Footer />
 
     </>
   )

@@ -9,16 +9,15 @@ import DocumentSection from '../components/common/DocumentSection'
 export default function France() {
   return (
     <>
-        <Navbar />
 
-        <HeroSection to='/country/france' pageName='France' description='World Class Education, Countless Opportunities' Heading='Study In Francce' url='../images/country/header_banner.webp' />
 
-        <WhySection country={'france'} title='Why Choose The France For Higher Education?' description='The UK offers world-renowned universities, diverse programs, and unmatched career opportunities. With a flexible education system, cutting-edge research, and global exposure, it’s the top choice for students aiming for academic and professional success.'/>
+        <HeroSection to='/country/france' pageName='France' description='Prestige, Culture & Academic Excellence' Heading='Study In Francce' url='../images/country/header_banner.webp' />
+
+        <WhySection country={'france'} title='Why Choose The France For Higher Education?' description="France is a global leader in education, art, fashion, and innovation. With affordable tuition, world-class institutions, and rich cultural heritage, it's a favorite destination for students seeking quality education in the heart of Europe."/>
 
         <Course />
         <DocumentSection countryName='France' />
 
-        <Footer />
     </>
   )
 }

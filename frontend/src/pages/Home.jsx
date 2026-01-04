@@ -11,14 +11,14 @@ import Footer from '../components/layout/Footer'
 export default function Home() {
     return (
         <>
-            <Navbar />
+
             <Hero />
             <AboutSection />
             <Countries />
             <Services />
             <TrustedSection />
             <BlogSection title={"NEWS AND BLOGS"} />
-            <Footer />
+
         </>
     )
 }

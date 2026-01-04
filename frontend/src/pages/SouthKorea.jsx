@@ -9,16 +9,14 @@ import DocumentSection from '../components/common/DocumentSection'
 export default function SouthKorea() {
   return (
     <>
-        <Navbar />
 
-        <HeroSection to='/country/south-korea' pageName='South Korea' description='World Class Education, Countless Opportunities' Heading='Study In South Korea' url='../images/country/header_banner.webp' />
+        <HeroSection to='/country/southkorea' pageName='South Korea' description='Innovative Education, Global Edge' Heading='Study In South Korea' url='../images/country/header_banner.webp' />
 
-        <WhySection country={'south-korea'} title='Why Choose The South Korea For Higher Education?' description='The UK offers world-renowned universities, diverse programs, and unmatched career opportunities. With a flexible education system, cutting-edge research, and global exposure, it’s the top choice for students aiming for academic and professional success.'/>
+        <WhySection country={'southkorea'} title='Why Choose The South Korea For Higher Education?' description="South Korea offers cutting-edge education, global-standard universities, and a dynamic culture. With growing numbers of English-taught programs, strong tech industries, and low tuition fees, it's a smart destination for ambitious students."/>
 
         <Course />
         <DocumentSection countryName='South Korea' />
 
-        <Footer />
     </>
   )
 }

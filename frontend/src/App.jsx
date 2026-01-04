@@ -10,23 +10,38 @@ import SouthKorea from "./pages/SouthKorea"
 import Australia from "./pages/Australia"
 import Japan from "./pages/Japan"
 import France from "./pages/France"
+import ScrollToTop from "./ScrollToTop"
+import Navbar from "./components/layout/Navbar"
+import Footer from "./components/layout/Footer"
+import NotFound from "./pages/NotFound"
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/blog' element={<Blogs />} />
+
+        
         <Route path='/country/usa' element={<USA />} />
         <Route path='/country/canada' element={<Canada />} />
         <Route path='/country/uk' element={<UK />} />
         <Route path='/country/malaysia' element={<Malaysia />} />
-        <Route path='/country/south-korea' element={<SouthKorea />} />
+        <Route path='/country/southkorea' element={<SouthKorea />} />
         <Route path='/country/australia' element={<Australia />} />
         <Route path='/country/japan' element={<Japan />} />
         <Route path='/country/france' element={<France />} />
+
+
+
+        <Route path='*' element={<NotFound />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   )
 }
