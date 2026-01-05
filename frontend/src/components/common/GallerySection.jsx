@@ -28,7 +28,7 @@ const MultiPageGallery = () => {
   return (
     <div className="w-full bg-slate-100 mx-auto px-4 py-12 font-sans">
       <header className="text-center mb-12">
-        <h2 className="text-3xl font-extrabold text-red-500 font-serif sm:text-4xl">Manifest Gallery</h2>
+        <h2 className="text-3xl font-extrabold text-red-500 font-serif sm:text-4xl uppercase">Manifest Gallery</h2>
         <div className="mt-4 flex flex-wrap justify-center gap-2">
           {categories.map((cat) => (
             <button

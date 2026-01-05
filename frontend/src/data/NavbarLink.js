@@ -1,3 +1,5 @@
+
+
 export const Navbarlink = [
     {
         title : "Home",
@@ -15,7 +17,12 @@ export const Navbarlink = [
     },{
         title : "Success Story",
         to : "/gallery"
-    },{
+    },
+    {
+        title : "Our Team",
+        to : "/ourteam"
+    },
+    {
         title : "Blogs & FAQs",
         to : "/blog"
     }

@@ -14,7 +14,9 @@ import ScrollToTop from "./ScrollToTop"
 import Navbar from "./components/layout/Navbar"
 import Footer from "./components/layout/Footer"
 import Gallery from "./pages/Gallery"
+import OurTeamSection from "./pages/Our_Team"
 import NotFound from "./pages/NotFound"
+
 
 export default function App() {
   return (
@@ -37,6 +39,7 @@ export default function App() {
         <Route path='/country/australia' element={<Australia />} />
         <Route path='/country/japan' element={<Japan />} />
         <Route path='/country/france' element={<France />} />
+        <Route path='/ourteam' element={<OurTeamSection />} />
 
 
 
