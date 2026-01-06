@@ -1,56 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'
+import { teamMembers } from '../data/TeamMember_Data';
 
-const teamMembers = [
-    {
-        name: "Alex Rivera",
-        role: "Founder & CEO",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-        bio: "Visionary leader with 15 years of experience in tech innovation."
-    },
-    {
-        name: "Sarah Chen",
-        role: "CTO",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-        bio: "Expert in scalable architecture and distributed systems."
-    },
-    {
-        name: "Marcus Jordan",
-        role: "Head of Design",
-        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-        bio: "Crafting beautiful, user-centric digital experiences."
-    },
-    {
-        name: "Elena Rodriguez",
-        role: "Product Manager",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
-        bio: "Bridging the gap between user needs and technical execution."
-    },
-    {
-        name: "David Park",
-        role: "Lead Developer",
-        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
-        bio: "Full-stack wizard with a passion for clean, maintainable code."
-    },
-    {
-        name: "Maya Patel",
-        role: "Marketing Director",
-        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
-        bio: "Strategic storyteller building global brand awareness."
-    },
-    {
-        name: "James Wilson",
-        role: "UX Researcher",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-        bio: "Deep diving into user behavior to drive product decisions."
-    },
-    {
-        name: "Sophie Bennett",
-        role: "Customer Success",
-        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
-        bio: "Dedicated to ensuring every client achieves their goals."
-    }
-];
 
 const OurTeamSection = () => {
     return (
