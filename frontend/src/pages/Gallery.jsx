@@ -1,12 +1,11 @@
 import React from 'react'
 import MultiPageGallery from '../components/common/GallerySection'
-import FAQSection from '../components/ui/FAQSection'
+import Buttons from '../components/ui/Buttons'
 
 export default function Gallery() {
   return (
     <>
       <MultiPageGallery />
-      <FAQSection />
     </>
   )
 }

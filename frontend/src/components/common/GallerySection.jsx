@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { galleryData } from '../../data/GalleryData';
+import Buttons from '../ui/Buttons';
 
 const ITEMS_PER_PAGE = 6; // You can change this to 8 or 12
 
@@ -26,7 +27,7 @@ const MultiPageGallery = () => {
   };
 
   return (
-    <div className="w-full bg-slate-100 mx-auto px-4 py-12 font-sans">
+    <div className="w-full bg-slate-100 mx-auto flex justify-center items-center flex-col px-4 py-12 font-sans">
       <header className="text-center mb-12">
         <h2 className="text-3xl font-extrabold text-red-500 font-serif sm:text-4xl uppercase">Manifest Gallery</h2>
         <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -97,6 +98,9 @@ const MultiPageGallery = () => {
           </button>
         </div>
       )}
+
+            <Buttons label={'Start Your Application'} to={'/contact'} classname='mt-10' />
+
     </div>
   );
 };

@@ -1,12 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion'
 import { teamMembers } from '../data/TeamMember_Data';
-import FAQSection from '../components/ui/FAQSection';
-
+import Buttons from '../components/ui/Buttons';
 
 const OurTeamSection = () => {
     return (
-        <section className="bg-white py-8 sm:py-10">
+        <section className="bg-white py-8 sm:py-10 flex justify-center items-center flex-col ">
             <div className="mx-auto max-w-7xl mb-12 px-6 lg:px-8">
                 {/* Header Section */}
                 <div className="w-full mb-16 text-center">
@@ -64,7 +63,8 @@ const OurTeamSection = () => {
                 </motion.ul>
             </div>
 
-            <FAQSection />
+                  <Buttons label={'Start Your Application'} to={'/contact'} />
+            
         </section>
     );
 };

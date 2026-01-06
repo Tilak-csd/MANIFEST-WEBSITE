@@ -10,11 +10,7 @@ export default function FAQSection() {
     };
 
     return (
-        <motion.section
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+        <section
             className="max-w-4xl mx-auto px-6 py-10 sm:py-10">
             <div
 
@@ -64,6 +60,6 @@ export default function FAQSection() {
                     </div>
                 ))}
             </div>
-        </motion.section>
+        </section>
     )
 }
