@@ -7,7 +7,7 @@ import BlogSection from '../components/common/BlogSection'
 export default function Blogs() {
   return (
     <>
-    <HeroSection description='See the Latest Blogs and FAQs from our Team.' to={'/blog'} Heading={'Blogs & FAQs'} pageName='Blogs & FAQs' url='./images/blog/BANNER.webp' />
+    <HeroSection description='See the Latest Blogs and FAQs from our Team.' to={'/blog'} Heading={'Blogs & FAQs'} pageName='Blogs & FAQs' url='https://ik.imagekit.io/fsso0s4pw/Header/BANNER.webp' />
     <BlogSection />
 
     </>

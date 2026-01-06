@@ -10,7 +10,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           // Replace with your actual image path
-          backgroundImage: `url('./images/reception photo.avif')`
+          backgroundImage: `url('https://ik.imagekit.io/fsso0s4pw/Header/main.avif')`
         }}
       >
         {/* The Dark Overlay */}

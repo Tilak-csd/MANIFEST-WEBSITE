@@ -10,7 +10,7 @@ export default function Japan() {
   return (
     <>
 
-        <HeroSection to='/country/japan' pageName='Japan' description='Innovation Meets Tradition in World-Class Education' Heading='Study In Japan' url='../images/country/header_banner.webp' />
+        <HeroSection to='/country/japan' pageName='Japan' description='Innovation Meets Tradition in World-Class Education' Heading='Study In Japan' url='https://ik.imagekit.io/fsso0s4pw/Header/header_banner.webp' />
 
         <WhySection country={'japan'} title='Why Choose The Japan For Higher Education?' description='Japan offers a unique blend of technological advancement and cultural depth. Its universities are globally ranked, tuition is affordable, and scholarships are widely available. Students gain access to innovation, research, and a peaceful, safe environment.'/>
 

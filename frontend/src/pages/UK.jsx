@@ -10,7 +10,7 @@ export default function UK() {
   return (
     <>
 
-        <HeroSection to='/country/uk' pageName='UK' description='Prestigious Education, Global Recognition' Heading='Study In UK' url='../images/country/header_banner.webp' />
+        <HeroSection to='/country/uk' pageName='UK' description='Prestigious Education, Global Recognition' Heading='Study In UK' url='https://ik.imagekit.io/fsso0s4pw/Header/header_banner.webp' />
 
         <WhySection country={'uk'} title='Why Choose The Uk For Higher Education?' description='The UK combines historic academic excellence with modern, flexible learning. With globally recognized universities, shorter course durations, and post-study work options, it’s a smart choice for international students.'/>
 

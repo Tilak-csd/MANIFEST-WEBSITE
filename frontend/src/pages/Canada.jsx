@@ -11,7 +11,7 @@ export default function Canada() {
    <>
 
 
-        <HeroSection to='/country/canada' pageName='Canada' description='Quality Education, Welcoming Culture' Heading='Study In Canada' url='../images/country/header_banner.webp' />
+        <HeroSection to='/country/canada' pageName='Canada' description='Quality Education, Welcoming Culture' Heading='Study In Canada' url='https://ik.imagekit.io/fsso0s4pw/Header/header_banner.webp' />
 
         <WhySection country={'canada'} title='Why Choose The USA For Higher Education?' description="Canada is known for its high-quality education, affordable tuition, and safe, inclusive society. With globally respected universities, post-graduation work opportunities, and stunning natural surroundings, it's a top choice for students worldwide."/>
 

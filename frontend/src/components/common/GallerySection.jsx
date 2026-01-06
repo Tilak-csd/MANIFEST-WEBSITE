@@ -7,7 +7,7 @@ const MultiPageGallery = () => {
   const [activeTab, setActiveTab] = useState('congratulation');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const categories = ['congratulation', 'program', "flights", "celeberation", "team", 'interview', 'events'];
+  const categories = ['congratulation', 'program', "flights", "celeberation", 'interview', 'events'];
 
   // 1. Filter data by category
   const filteredData = useMemo(() => {
@@ -48,8 +48,8 @@ const MultiPageGallery = () => {
 
       {/* Photo Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {currentItems.map((item) => (
-          <div key={item.id} className="group cursor-pointer">
+        {currentItems.map((item, index) => (
+          <div key={index} className="group cursor-pointer">
             <div className="relative overflow-hidden rounded-lg bg-gray-200 aspect-[4/3]">
               <img
                 src={item.src}

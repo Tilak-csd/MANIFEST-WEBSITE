@@ -11,7 +11,7 @@ export default function France() {
     <>
 
 
-        <HeroSection to='/country/france' pageName='France' description='Prestige, Culture & Academic Excellence' Heading='Study In Francce' url='../images/country/header_banner.webp' />
+        <HeroSection to='/country/france' pageName='France' description='Prestige, Culture & Academic Excellence' Heading='Study In Francce' url='https://ik.imagekit.io/fsso0s4pw/Header/header_banner.webp' />
 
         <WhySection country={'france'} title='Why Choose The France For Higher Education?' description="France is a global leader in education, art, fashion, and innovation. With affordable tuition, world-class institutions, and rich cultural heritage, it's a favorite destination for students seeking quality education in the heart of Europe."/>
 

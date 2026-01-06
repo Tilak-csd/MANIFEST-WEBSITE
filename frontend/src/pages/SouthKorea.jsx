@@ -10,7 +10,7 @@ export default function SouthKorea() {
   return (
     <>
 
-        <HeroSection to='/country/southkorea' pageName='South Korea' description='Innovative Education, Global Edge' Heading='Study In South Korea' url='../images/country/header_banner.webp' />
+        <HeroSection to='/country/southkorea' pageName='South Korea' description='Innovative Education, Global Edge' Heading='Study In South Korea' url='https://ik.imagekit.io/fsso0s4pw/Header/header_banner.webp' />
 
         <WhySection country={'southkorea'} title='Why Choose The South Korea For Higher Education?' description="South Korea offers cutting-edge education, global-standard universities, and a dynamic culture. With growing numbers of English-taught programs, strong tech industries, and low tuition fees, it's a smart destination for ambitious students."/>
 
