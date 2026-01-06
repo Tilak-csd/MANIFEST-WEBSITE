@@ -1,29 +1,31 @@
-
-
 export const Navbarlink = [
     {
-        title : "Home",
-        to : '/'
-        
-    },{
-        title : "About Us",
-        to : "#aboutus"
-    },{
+        title: "Home",
+        to: '/'
+    },
+    {
+        title: "About Us",
+        // Adding the '/' before the '#' makes it go to the home page first
+        to: "/#aboutus" 
+    },
+    {
         title: "Services",
-        to : '#service'
-    },{
-        title : "Countries",
-        to : "#country"
-    },{
-        title : "Success Story",
-        to : "/gallery"
+        to: '/#services'
     },
     {
-        title : "Our Team",
-        to : "/ourteam"
+        title: "Countries",
+        to: "/#country"
     },
     {
-        title : "Blogs & FAQs",
-        to : "/blog"
+        title: "Success Story",
+        to: "/gallery"
+    },
+    {
+        title: "Our Team",
+        to: "/ourteam"
+    },
+    {
+        title: "Blogs & FAQs",
+        to: "/blog"
     }
 ]

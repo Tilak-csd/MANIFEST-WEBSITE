@@ -8,7 +8,7 @@ export default function ServiceCard({ index, url, title, description }) {
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{
                 y: -10,
-                transition:{delay:0, duration:0.4}
+                transition:{delay:0, duration:0.4, ease:"easeInOut"}
 
             }}
             viewport={{ once: true, amount: .4 }}

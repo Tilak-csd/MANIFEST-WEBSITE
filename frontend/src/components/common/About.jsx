@@ -14,7 +14,7 @@ const AboutSection = () => {
     ];
 
     return (
-        <section className="bg-slate-50 py-20 px-6 font-poppins">
+        <section id="aboutus" className="bg-slate-50 py-20 px-6 font-poppins">
             <div className="max-w-6xl mx-auto text-center">
 
                 {/* Header Content */}

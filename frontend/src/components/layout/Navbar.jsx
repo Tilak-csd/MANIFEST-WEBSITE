@@ -1,18 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import { Facebook, Instagram, Twitter, PhoneCall, Mail, MapPin } from 'lucide-react';
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+// 1. Import NavHashLink instead of just NavLink for anchor tags
+import { NavHashLink } from 'react-router-hash-link';
 import { Navbarlink } from '../../data/NavbarLink';
 import Buttons from '../ui/Buttons';
 
+
+const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -100; // Adjust this number based on your navbar height
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+}
+
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+
     return (
         <div className="sticky top-0 z-50 w-full font-poppins bg-white shadow-sm">
-                        {/* Navbar itself */}
+            {/* Navbar itself */}
             <div className={`relative flex justify-between md:h-30 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
 
                 {/* Logo */}
-                <NavLink to='/' className="cursor-pointer md:w-[10%]">
+                <NavLink to='/' className="flex justify-center items-center cursor-pointer md:w-[10%]">
                     <img src="../logo.png" alt="" className='w-16 md:w-25' />
                 </NavLink>
 
@@ -21,14 +31,9 @@ export default function Navbar() {
 
                 {/* Desktop Menu Navbar */}
                 <div className='w-[80%] hidden relative md:flex justify-center flex-col items-center gap-2 h-full px-5'>
-                    {/* contact */}
                     <Contacts />
-
-                    {/* line */}
                     <div className='w-full h-[.5px] bg-gray-400'></div>
-
-                    {/* Navbar Links */}
-                    <Navlink />
+                    <NavlinkContainer />
                 </div>
             </div>
 
@@ -43,22 +48,28 @@ export default function Navbar() {
 }
 
 // NavLink for the desktop
-function Navlink() {
+function NavlinkContainer() {
     return (
         <div className='flex justify-between items-center w-full gap-6'>
-            <ul className="flex justify-center items-center gap-6 font-poppins text-md md:flex-row md:h-[full]  ">
+            <ul className="flex justify-center items-center gap-6 font-poppins text-md md:flex-row md:h-[full]">
                 {Navbarlink.map((links, idx) => {
-                    return <li key={idx}>
-                        <NavLink to={links.to} className="group relative text-black transition duration-300 hover:text-red-500">
-                            {links.title}
-                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-                        </NavLink>
-                    </li>
+                    return (
+                        <li key={idx}>
+                            {/* 2. Use NavHashLink with the 'smooth' prop for desktop */}
+                            <NavHashLink
+                                smooth
+                                to={links.to}
+                                scroll={el => scrollWithOffset(el)}
+                                className="group relative text-black transition duration-300 hover:text-red-500"
+                            >
+                                {links.title}
+                                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                            </NavHashLink>
+                        </li>
+                    )
                 })}
             </ul>
-
             <Buttons label={'APPLY NOW'} to={'/contact'}></Buttons>
-
         </div>
     );
 }
@@ -66,19 +77,28 @@ function Navlink() {
 // Navlink for Mobile
 function MobileNavlink({ setOpen }) {
     return (
-        <ul className="flex flex-col justify-center items-center gap-6 font-poppins text-md md:flex-row md:h-[full]  ">
+        <ul className="flex flex-col justify-center items-center gap-6 font-poppins text-md md:flex-row md:h-[full]">
             {Navbarlink.map((links, idx) => {
-                return <li key={idx}>
-                    <NavLink to={links.to} onClick={() => setOpen(prev => !prev)} className="group relative text-white transition duration-300">
-                        {links.title}
-                        <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </NavLink>
-                </li>
+                return (
+                    <li key={idx}>
+                        {/* 3. Use NavHashLink here too so mobile users can jump to sections */}
+                        <NavHashLink
+                            smooth
+                            to={links.to}
+                            scroll={el => scrollWithOffset(el)}
+                            onClick={() => setOpen(false)}
+                            className="group relative text-white transition duration-300"
+                        >
+                            {links.title}
+                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                        </NavHashLink>
+                    </li>
+                )
             })}
-
         </ul>
     );
 }
+
 
 function OpenMenu({ setOpen }) {
     return (
@@ -100,7 +120,6 @@ function CloseMenu({ setOpen }) {
     );
 }
 
-
 // Navbar Contact information
 
 function Contacts() {
@@ -108,15 +127,15 @@ function Contacts() {
         <div className='w-full flex justify-between items-center font-poppins text-black text-sm'>
             <div className='flex justify-center items-center gap-1'>
                 <PhoneCall size={18} color='#6b7280' />
-                <p>9846847988</p>
+                <p>01-5922253, 9851363253</p>
             </div>
             <div className='flex justify-center items-center gap-1'>
                 <Mail size={18} color='#6b7280' />
-                <p> manifest@gmail.com</p>
+                <p> manifestedu11@gmail.com</p>
             </div>
             <div className='flex justify-center items-center gap-1'>
                 <MapPin size={18} color='#6b7280' />
-                <p>( Opposite to Start Mall) Putalisadak, Kathmandu</p>
+                <p>( Opposite to Star Mall) Putalisadak, Kathmandu</p>
             </div>
         </div>
     )

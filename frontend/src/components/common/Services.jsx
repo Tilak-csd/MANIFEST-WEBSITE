@@ -4,7 +4,7 @@ import ServiceCard from '../ui/ServiceCard'
 
 export default function Services() {
     return (
-        <section className="bg-slate-50 py-20 px-6 font-poppins">
+        <section id="services" className="bg-slate-50 py-20 px-6 font-poppins">
             <div className='text-center'>
                 <h1 className="text-2xl md:text-4xl font-serif font-extrabold text-[#D32F2F] tracking-tight uppercase">
                     OUR SERVICES</h1>
