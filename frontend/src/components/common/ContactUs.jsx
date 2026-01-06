@@ -52,7 +52,7 @@ const ContactUs = () => {
           </div>
 
           {/* Right Column: Contact Details */}
-          <div className="w-full  md:width-[40%]">
+          <div className="w-full  md:w-[40%]">
             <h2 className="tracking-[0.6em] uppercase text-sm mb-8 text-center font-serif">Contact Details</h2>
 
             <div className="space-y-4">
