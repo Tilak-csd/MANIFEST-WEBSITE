@@ -15,13 +15,13 @@ const TrustedSection = () => {
             <div className="absolute inset-0 bg-black/50"></div>
 
             {/* Content Container */}
-            <div className="relative z-10 text-center px-4 max-w-5xl mx-auto text-white">
+            <div className="relative z-10 text-center px-4 w-full md:max-w-5xl mx-auto text-white">
                 <motion.h1
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.6 }}
-                    className="text-3xl md:text-5xl font-bold mb-4 font-serif drop-shadow-lg">
+                    className="text-2xl md:text-4xl font-bold mb-4 font-serif drop-shadow-lg">
                     Trusted by More Than 5000 Students
                 </motion.h1>
 
@@ -30,7 +30,7 @@ const TrustedSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="text-lg md:text-xl font-light mb-8 opacity-90 leading-relaxed">
+                    className="text-sm md:text-lg font-light mb-8 opacity-90 leading-relaxed">
                     We offer expert teaching from highly qualified professionals, continuous
                     personalized guidance, and a dedicated support team focused on helping
                     every student thrive.

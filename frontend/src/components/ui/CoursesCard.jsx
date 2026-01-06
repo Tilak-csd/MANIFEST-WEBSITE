@@ -3,7 +3,7 @@ import { SubjectData } from '../../data/AboutCountry_Data';
 
 const CourseCards = () => {
   return (
-    <div className="p-8 h-auto">
+    <div className="py-8 md:p-8 h-auto">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-center items-center flex-wrap gap-6">
           {SubjectData.map((item, index) => (
@@ -22,7 +22,7 @@ const CourseCards = () => {
 
               {/* Text Content */}
               <div className="relative h-full flex items-center justify-center p-6 text-center">
-                <h3 className="text-white text-2xl font-bold leading-tight drop-shadow-md">
+                <h3 className="text-white text-xl md:text-2xl font-bold leading-tight drop-shadow-md">
                   {item.title}
                 </h3>
               </div>

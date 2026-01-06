@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import FAQData from '../../data/FAQData';
-import { motion } from 'motion/react'
 
 export default function FAQSection() {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -15,10 +14,10 @@ export default function FAQSection() {
             <div
 
                 className="text-center mb-12">
-                <h2 className="text-3xl sm:text-4xl font-extrabold font-serif uppercase text-gray-900 tracking-tight">
+                <h2 className="text-2xl sm:text-4xl font-extrabold font-serif uppercase text-red-500 tracking-tight">
                     Your Questions, Answered
                 </h2>
-                <p className="mt-4 text-lg text-gray-500">
+                <p className="mt-4 text-md md:text-lg text-gray-500">
                     Everything you need to know about the journey to studying abroad and how we support your global ambitions.
                 </p>
             </div>
@@ -32,7 +31,7 @@ export default function FAQSection() {
                         <button
                             onClick={() => toggleAccordion(index)}
                             className="w-full flex justify-between items-center px-6 py-5 text-left transition-colors bg-white group-hover:bg-blue-50/30 cursor-pointer">
-                            <span className={`text-lg font-semibold transition-colors duration-300 ${activeIndex === index ? "text-black" : "text-gray-800"
+                            <span className={`text-sm md:text-lg font-semibold transition-colors duration-300 ${activeIndex === index ? "text-black" : "text-gray-800"
                                 }`}>
                                 {item.question}
                             </span>

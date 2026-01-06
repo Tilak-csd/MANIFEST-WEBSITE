@@ -12,7 +12,7 @@ const CountryFacilities = ({ country }) => {
         whileInView={{opacity:1, y:0}}
         viewport={{once:true, amount:.4}}
         transition={{duration:.4, delay:.2}}
-        className="p-8 h-auto">
+        className="py-8 md:p-8 h-auto">
             <div className="w-full md:max-w-5xl mx-auto">
                 <div className="flex justify-center items-center flex-wrap gap-6">
                     {countryFacilitiesData.map((card, index) => (
@@ -28,11 +28,11 @@ const CountryFacilities = ({ country }) => {
                         >
                             <div className="flex items-center gap-3">
                                 <card.icon className="w-8 h-8 text-red-500" strokeWidth={1.5} />
-                                <h3 className="text-xl text-left font-semibold text-slate-800 font-serif">
+                                <h3 className="text-lg md:text-xl text-left font-semibold text-slate-800 font-serif">
                                     {card.title}
                                 </h3>
                             </div>
-                            <p className="text-slate-600 leading-relaxed text-base text-left">
+                            <p className="text-slate-600 leading-relaxed text-sm md:text-base text-left">
                                 {card.description}
                             </p>
                         </motion.div>

@@ -27,7 +27,7 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.4 }}
                         transition={{ duration: 0.6 }}
-                        className="text-4xl font-serif md:text-5xl font-extrabold text-[#D32F2F] tracking-tight uppercase"
+                        className="text-2xl md:text-4xl font-serif font-extrabold text-[#D32F2F] tracking-tight uppercase"
                     >
                         Welcome to the Manifest
                     </motion.h2>
@@ -37,7 +37,8 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.4 }}
                         transition={{ duration: 0.6, delay: .2 }}
-                        className="text-xl md:text-2xl font-bold text-slate-800"
+                        className="text-lg
+                         md:text-2xl font-bold text-slate-800"
                     >
                         The Leading Consultancy In Nepal
                     </motion.p>
@@ -47,7 +48,7 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.4 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="text-lg text-slate-600 leading-relaxed mt-6"
+                        className="text-sm md:text-lg text-slate-600 leading-relaxed mt-6"
                     >
                         Manifest Education Consultancy has built a strong reputation as one of Nepal’s
                         leading educational consultancies for studying abroad. With years of trusted
@@ -60,7 +61,7 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.4 }}
                         transition={{ duration: 0.6, delay: .4 }}
-                        className="text-lg text-slate-600 pt-4"
+                        className="text-sm md:text-lg text-slate-600 pt-4"
                     >
                         Our head office is conveniently located in Putalisadak, opposite Star Mall, Kathmandu.
                     </motion.p>

@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 
 const HeroSection = ({ pageName = "", to = "", Heading = "", description = "", url = "" }) => {
     return (
-        <section className="relative w-full px-8 py-4 overflow-hidden bg-slate-100 font-poppins">
+        <section className="relative w-full md:px-8 py-4 overflow-hidden bg-slate-100 font-poppins">
             <div>
-                <div className='flex items-center text-md'>
+                <div className='flex px-3 md:px-0 items-center text-md'>
                     <NavLink to='/'>
                         Home
                     </NavLink>
@@ -30,7 +30,7 @@ const HeroSection = ({ pageName = "", to = "", Heading = "", description = "", u
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: .6 }}
                             transition={{ duration: .6, delay: .2 }}
-                            className="text-white text-5xl font-bold">
+                            className="text-white text-center text-3xl md:text-5xl font-bold">
 
                             {Heading}
 
@@ -40,7 +40,7 @@ const HeroSection = ({ pageName = "", to = "", Heading = "", description = "", u
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: .6 }}
                             transition={{ duration: .6, delay: .3 }}
-                            className='text-white text-lg text-center font-medium'>
+                            className='text-white text-md md:text-lg text-center font-medium'>
 
                             {description}
 

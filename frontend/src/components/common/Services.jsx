@@ -6,9 +6,9 @@ export default function Services() {
     return (
         <section className="bg-slate-50 py-20 px-6 font-poppins">
             <div className='text-center'>
-                <h1 className="text-4xl font-serif md:text-5xl font-extrabold text-[#D32F2F] tracking-tight uppercase">
+                <h1 className="text-2xl md:text-4xl font-serif font-extrabold text-[#D32F2F] tracking-tight uppercase">
                     OUR SERVICES</h1>
-                <p className='text-lg text-slate-700 mt-1'>Empowering Your Study Abroad Dreams with Expert Guidance and Proven Visa Support</p>
+                <p className='text-sm md:text-lg text-slate-700 mt-1'>Empowering Your Study Abroad Dreams with Expert Guidance and Proven Visa Support</p>
             </div>
 
             {/* Our Services Cards */}

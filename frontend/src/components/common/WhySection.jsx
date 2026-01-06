@@ -10,8 +10,8 @@ export default function WhySection({ title = "", description = "", country }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: .6 }}
         transition={{ duration: .6, delay: .4 }}>
-        <h1 className='font-serif text-4xl font-semibold mb-2 text-slate-800'>{title}</h1>
-        <p className='font-poppins text-md md:text-lg max-w-6xl mt-2 text-center'>{description}</p>
+        <h1 className='font-serif text-2xl md:text-4xl font-semibold mb-2 text-slate-800'>{title}</h1>
+        <p className='font-poppins text-sm md:text-lg max-w-6xl mt-2 text-center'>{description}</p>
       </motion.div>
 
       {/* facilities card */}

@@ -5,10 +5,7 @@ import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 export default function DocumentSection({ countryName = "" }) {
-    console.log(countryName);
     const country = countryName
-    console.log(country);
-
 
     return (
         <section className="bg-slate-50 py-5 px-5 h-atuo md:px-20 font-poppins text-center">
@@ -17,7 +14,7 @@ export default function DocumentSection({ countryName = "" }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.4 }}
                 transition={{ duration: .6, delay: .2 }}
-                className='font-serif text-4xl font-semibold mb-2 text-slate-800'>
+                className='font-serif text-2xl md:text-4xl font-semibold mb-2 text-slate-800'>
                 Required Documents to Apply for {countryName}
             </motion.h1>
 

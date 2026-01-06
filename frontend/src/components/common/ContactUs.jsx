@@ -3,8 +3,7 @@ import { Mail, Phone, MapPin, Instagram, Facebook, MessageCircle, Linkedin } fro
 
 const ContactUs = () => {
 
-
-
+// API Logic
 
 
   return (
@@ -13,14 +12,14 @@ const ContactUs = () => {
         {/* Header Section */}
         <header className="text-center mb-8">
           <p className="tracking-widest text-sm font-medium uppercase font-serif mb-2">Manifest Edu. Consultancy</p>
-          <h1 className="text-4xl md:text-5xl font-serif text-black tracking-[.3em] uppercase">Contact Us</h1>
+          <h1 className="text-2xl md:text-4xl font-serif text-black tracking-[.3em] uppercase">Contact Us</h1>
         </header>
 
         {/* Main Flex Container */}
         <div className="flex flex-col md:flex-row justify-around gap-12 lg:gap-24 px-4">
 
           {/* Left Column: Online Inquiry */}
-          <div className="w-[40%]">
+          <div className="w-full md:w-[40%]">
             <h2 className="tracking-[0.6em] uppercase text-sm  text-center font-serif mb-8">Online Inquiry</h2>
             <div className="space-y-4">
               <input
@@ -53,12 +52,12 @@ const ContactUs = () => {
           </div>
 
           {/* Right Column: Contact Details */}
-          <div className="width-[40%]">
+          <div className="w-full  md:width-[40%]">
             <h2 className="tracking-[0.6em] uppercase text-sm mb-8 text-center font-serif">Contact Details</h2>
 
             <div className="space-y-4">
               {/* Email */}
-              <div className="flex items-center gap-4 text-md">
+              <div className="flex items-center gap-4 text-sm md:text-md">
                 <Mail className="text-red-500 w-6 h-6" />
                 <span>
                   journeyinteducation@gmail.com
@@ -66,14 +65,14 @@ const ContactUs = () => {
               </div>
 
               {/* Phone */}
-              <div className="flex items-center gap-4 text-md">
+              <div className="flex items-center gap-4 text-sm md:text-md">
                 <Phone className="text-red-500 w-6 h-6" />
                 <span>01-5922253, 9851363253</span>
               </div>
 
               {/* Address */}
-              <div className="flex items-start gap-4 text-md">
-                <MapPin className="text-red-500 w-6 h-6" />
+              <div className="flex items-start gap-4 text-sm md:text-md">
+                <MapPin className="text-red-500 w-8 h-8" />
                 <span>Putalisadak (Opposite to Star Mall), Kathmandu</span>
               </div>
 

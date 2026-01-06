@@ -7,13 +7,13 @@ import Buttons from '../ui/Buttons';
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     return (
-        <div className="relative w-full font-poppins">
-            {/* Navbar itself */}
-            <div className={`relative flex justify-between h-30 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
+        <div className="sticky top-0 z-50 w-full font-poppins bg-white shadow-sm">
+                        {/* Navbar itself */}
+            <div className={`relative flex justify-between md:h-30 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
 
                 {/* Logo */}
                 <NavLink to='/' className="cursor-pointer md:w-[10%]">
-                    <img src="../logo.png" alt="" className='w-25' />
+                    <img src="../logo.png" alt="" className='w-16 md:w-25' />
                 </NavLink>
 
                 {/* Humburger for the mobile */}
