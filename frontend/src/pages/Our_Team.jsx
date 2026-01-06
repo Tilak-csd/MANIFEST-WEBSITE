@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion'
 import { teamMembers } from '../data/TeamMember_Data';
+import FAQSection from '../components/ui/FAQSection';
 
 
 const OurTeamSection = () => {
     return (
         <section className="bg-white py-8 sm:py-10">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl mb-12 px-6 lg:px-8">
                 {/* Header Section */}
                 <div className="w-full mb-16 text-center">
                     <motion.h2
@@ -62,6 +63,8 @@ const OurTeamSection = () => {
                     ))}
                 </motion.ul>
             </div>
+
+            <FAQSection />
         </section>
     );
 };
