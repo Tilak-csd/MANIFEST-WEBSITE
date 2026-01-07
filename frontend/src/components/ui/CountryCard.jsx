@@ -26,9 +26,9 @@ export default function CountryCard({index, url, country, to}) {
 
                 {/* <Buttons classname={"rounded-none py-1 px-5"} to={to} label={'Learn More'}>
                 </Buttons> */}
-                <button className='py-2 px-4 rounded-sm cursor-pointer font-semibold bg-red-500 hover:bg-white hover:text-red-500 text-white '>
+                <NavLink to={to} className='py-2 px-4 rounded-sm cursor-pointer font-semibold bg-red-500 hover:bg-white hover:text-red-500 text-white '>
                     Learn More
-                </button>
+                </NavLink>
             </div>
         </div>
     )

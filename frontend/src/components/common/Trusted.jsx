@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Buttons from '../ui/Buttons';
+import {NavLink} from 'react-router-dom'
 
 const TrustedSection = () => {
     return (
@@ -37,16 +38,15 @@ const TrustedSection = () => {
                 </motion.p>
 
                 {/* Hover Animation Button */}
-                <motion.button
+                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    whileHover={{
-                        scale: 1.05,
-                    }}
-                    className='py-3 px-6 rounded-md cursor-pointer font-semibold bg-red-500 hover:bg-white hover:text-red-500 text-white '>
-                    Learn More
-                </motion.button>
+                    viewport={{ once: true, amount: 0.4 }}>
+                    <NavLink to="/contact"
+                        className='py-3 px-6 rounded-md cursor-pointer font-semibold bg-red-500 hover:bg-white hover:text-red-500 text-white hover:scale-105'>
+                        Learn More
+                    </NavLink>
+                </motion.div>
             </div>
         </section>
     );

@@ -1,12 +1,12 @@
 export const countries = [
-    { name: "France", to : '/france', img: "./images/country/franch.webp" },
-    { name: "Canada", to : '/canada', img: "./images/country/canada.webp" },
-    { name: "Australia", to : '/australia', img: "./images/country/australia.webp" },
-    { name: "Japan", to : '/japan', img: "./images/country/japan.webp" },
-    { name: "Malaysia", to : '/malaysia', img: "./images/country/malaysia.webp" },
-    { name: "S. Korea", to : '/south_korea', img: "./images/country/south korea.webp" },
-    { name: "UK", to : '/uk', img: "./images/country/uk.webp" },
-    { name: "USA", to : '/usa', img: "./images/country/usa.webp" },
+    { name: "France", to : '/country/france', img: "./images/country/franch.webp" },
+    { name: "Canada", to : '/country/canada', img: "./images/country/canada.webp" },
+    { name: "Australia", to : '/country/australia', img: "./images/country/australia.webp" },
+    { name: "Japan", to : '/country/japan', img: "./images/country/japan.webp" },
+    { name: "Malaysia", to : '/country/malaysia', img: "./images/country/malaysia.webp" },
+    { name: "S. Korea", to : '/country/southkorea', img: "./images/country/south korea.webp" },
+    { name: "UK", to : '/country/uk', img: "./images/country/uk.webp" },
+    { name: "USA", to : '/country/usa', img: "./images/country/usa.webp" },
 
 ];
 
