@@ -6,7 +6,7 @@ export default function BlogContent({ children, heading = "", url = "", descript
             {/* Main Header */}
             <main className='flex justify-between items-end w-full gap-2'>
                 <div>
-                    <h1 className="text-2xl md:text-3xl text-blue-900 font-serif font-semibold mb-4">
+                    <h1 className="text-2xl md:text-4xl text-blue-900 font-serif font-semibold mb-4">
                        {heading}
                     </h1>
                     <p className="text-md font-poppins">

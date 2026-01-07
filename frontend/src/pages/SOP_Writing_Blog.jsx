@@ -13,7 +13,7 @@ const SOP_Writing_Blog = () => {
             <BlogContent heading='“How to write a Powerful SOP (Statement of Purpose)”' description='A strong SOP highlights your goals, reasons for choosing the course, and what drives you. It should be clear, personal, and show how the program fits your future plans—making your application memorable and impactful.' url='https://ik.imagekit.io/fsso0s4pw/Blog/sop_writing.webp'>
                 {/* Details Section */}
                 <div className='mb-6'>
-                    <h2 className="text-3xl font-bold font-serif text-blue-600 mb-4">What is SOP?</h2>
+                    <h2 className="text-3xl font-bold font-serif text-blue-900 mb-4">What is SOP?</h2>
                     <p className="text-md font-poppins">
                         A Statement of Purpose (SOP) is a formal essay that explains your motivation for
                         applying to a particular course or university. It outlines your academic background,
@@ -22,7 +22,7 @@ const SOP_Writing_Blog = () => {
                 </div>
 
                 <div className='mb-6'>
-                    <h2 className="text-3xl font-bold font-serif text-blue-600 mb-4">Why is an SOP Important?</h2>
+                    <h2 className="text-3xl font-bold font-serif text-blue-900 mb-4">Why is an SOP Important?</h2>
                     <p className="text-md font-poppins">
                         Universities and visa officers use your SOP to understand your goals and determine
                         if you're a strong candidate. A well-written SOP can set you apart from other
@@ -31,7 +31,7 @@ const SOP_Writing_Blog = () => {
                 </div>
 
                 <div className="mb-6">
-                    <h2 className="text-3xl font-bold font-serif text-blue-600 mb-4">Structure of a Strong SOP</h2>
+                    <h2 className="text-3xl font-bold font-serif text-blue-900 mb-4">Structure of a Strong SOP</h2>
                     <ul className="space-y-3 text-md font-poppins list-disc pl-4">
                         <li>
                             <span className="font-bold">Introduction:</span> Start with a strong hook and clearly state your intention to apply.
@@ -52,7 +52,7 @@ const SOP_Writing_Blog = () => {
                 </div>
 
                 <div className="mb-6">
-                    <h2 className="text-3xl font-bold text-blue-600 font-serif mb-4">Tips to Make Your SOP Stand Out</h2>
+                    <h2 className="text-3xl font-bold text-blue-900 font-serif mb-4">Tips to Make Your SOP Stand Out</h2>
                     <ol className="list-decimal list-inside space-y-3 text-md font-poppins ">
                         <li>Keep it personal and honest – avoid generic statements.</li>
                         <li>Stick to the word limit (usually 800–1000 words).</li>
@@ -65,7 +65,7 @@ const SOP_Writing_Blog = () => {
 
                 {/* Mistakes Section */}
                 <div className="mb-6">
-                    <h2 className="text-3xl font-bold text-blue-600 mb-4 font-serif">Common Mistakes to Avoid</h2>
+                    <h2 className="text-3xl font-bold text-blue-900 mb-4 font-serif">Common Mistakes to Avoid</h2>
                     <ul className="list-disc list-inside space-y-3 text-md font-poppins">
                         <li>Overloading with technical terms or jargon</li>
                         <li>Repeating your resume</li>
@@ -76,11 +76,11 @@ const SOP_Writing_Blog = () => {
 
                 {/* Download Section */}
                 <section className="mb-6">
-                    <h2 className="text-3xl font-bold text-blue-600 mb-4 font-serif">Sample SOP Download</h2>
+                    <h2 className="text-3xl font-bold text-blue-900 mb-4 font-serif">Sample SOP Download</h2>
                     <p className="text-md font-poppins mb-2">
                         You can download a sample SOP below to use as a reference.
                     </p>
-                    <a href='/download/Sample_SOP.pdf?url' download="Sample_SOP.pdf" className="flex items-center gap-2 w-80 bg-[#e53e3e] hover:bg-[#c53030] text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
+                    <a href='/download/Sample_SOP.pdf?url' download="Sample_SOP.pdf" className="flex items-center gap-2 w-80 bg-[#e53e3e] hover:scale-105 text-white font-bold py-3 px-6 rounded-lg transition-all shadow-md">
                         <Download size={20} />
                         Download Sample SOP (PDF)
                     </a>
