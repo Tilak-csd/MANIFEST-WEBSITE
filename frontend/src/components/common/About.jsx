@@ -1,18 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// Icons: You can use Lucide-React or Heroicons. 
-// I'll use placeholders that match the image style.
-import { ChartNoAxesCombined, Trophy, BadgeCheck, Users } from 'lucide-react';
+import { features } from '../../data/Home';
 
 const AboutSection = () => {
-    // Animation Variants
-    const features = [
-        { icon: <ChartNoAxesCombined  size={48} />, title: "High Visa Rate" },
-        { icon: <Trophy size={48} />, title: "Award-Winning Guidance" },
-        { icon: <BadgeCheck size={48} />, title: "Certified & Trusted Counselors" },
-        { icon: <Users size={48} />, title: "Personalized Support" },
-    ];
-
     return (
         <section id="aboutus" className="bg-slate-50 py-20 px-6 font-poppins">
             <div className="max-w-6xl mx-auto text-center">
@@ -82,12 +72,10 @@ const AboutSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.4 }}
                             transition={{ duration: 0.6, delay : index * .2}}
-                            className="flex flex-col items-center group hover:shadow-2xl py-8 px-4"
+                            className="flex flex-col rounded-md items-center group hover:shadow-2xl py-8 px-4"
                         >
                             {/* Icon Wrapper */}
-                            <div className="text-[#D32F2F] mb-4 transition-transform duration-300 group-hover:scale-110">
-                                {item.icon}
-                            </div>
+                            <img src={item.icon} alt={item.title} className='w-16 md:w-20' />
                             <p className="text-slate-900 text-md md:text-md">
                                 {item.title}
                             </p>

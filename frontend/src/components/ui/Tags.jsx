@@ -1,0 +1,26 @@
+import React from 'react'
+import { tags } from '../../data/BlogData'
+
+export default function Tags() {
+    return (
+        <aside className="lg:w-[25%]">
+            <div className="bg-[#eef8ff] border border-red-400 rounded-2xl p-12 sticky top-8 shadow-sm">
+                <h2 className="text-3xl font-bold mb-6 text-slate-900 border-b-2 border-slate-200 pb-2">
+                    Our Tags
+                </h2>
+                <ul className="space-y-1">
+                    {tags.map((tag, index) => (
+                        <li key={index}>
+                            <a
+                                href="#"
+                                className="text-[#334e68] hover:text-[#005bb7] transition-colors text-lg block"
+                            >
+                                {tag}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </aside>
+    )
+}

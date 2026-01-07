@@ -7,7 +7,7 @@ const BlogCard = ({index, url, title, description, to}) => {
             {/* Blue Header Section */}
             <div className="bg-[#1e2a78] h-24 w-full relative">
                 {/* Floating Thumbnail Image */}
-                <div className="absolute -bottom-10 left-6 w-24 h-24 rounded-xl overflow-hidden border-4 border-white shadow-md">
+                <div className="absolute -bottom-10 left-6 w-24 h-24 rounded-xl overflow-hidden">
                     <img
                         src={url}
                         alt={title}

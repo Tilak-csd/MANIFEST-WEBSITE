@@ -15,6 +15,7 @@ import Navbar from "./components/layout/Navbar"
 import Footer from "./components/layout/Footer"
 import Gallery from "./pages/Gallery"
 import OurTeamSection from "./pages/Our_Team"
+import SOPLandingPage from "./pages/SOPLandingPage"
 import NotFound from "./pages/NotFound"
 
 
@@ -28,6 +29,7 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/blog' element={<Blogs />} />
+        <Route path='/blog/sop_writing' element={<SOPLandingPage />} />
 
 
         <Route path='/gallery' element={<Gallery />} />
