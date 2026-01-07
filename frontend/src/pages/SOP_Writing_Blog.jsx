@@ -8,8 +8,7 @@ const SOP_Writing_Blog = () => {
     
 
     return (
-        <div className="flex justify-between items-start bg-[#f0f7ff] p-6 md:p-12 text-slate-800">
-
+        <div className="flex justify-between items-start flex-col lg:flex-row bg-[#f0f7ff] p-6 md:p-12 text-slate-800 gap-4">
             <BlogContent heading='“How to write a Powerful SOP (Statement of Purpose)”' description='A strong SOP highlights your goals, reasons for choosing the course, and what drives you. It should be clear, personal, and show how the program fits your future plans—making your application memorable and impactful.' url='https://ik.imagekit.io/fsso0s4pw/Blog/sop_writing.webp'>
                 {/* Details Section */}
                 <div className='mb-6'>

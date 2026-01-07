@@ -58,10 +58,10 @@ export const servicesData = [
 
 export const blogs = [
   {
-    title: "Join Our Expert-Led IELTS Classes – Just Rs. 2,999!",
-    description: "Affordable IELTS coaching with certified instructors, weekly mock tests, and full study materials—join now and boost your score.",
-    img: "",
-    to: "/blog/ilets_offer"
+    title: "Master the Art of Coffee: Free Barista Training at Manifest",
+    description: "Master coffee making from basic theory to advanced latte art with our expert-led course. Perfect for students heading abroad, this free program offers hands-on training and a professional internship certificate to kickstart your global career.",
+    img: "https://ik.imagekit.io/fsso0s4pw/Gallery/Programs/Free%20Barista%20Class.jpeg",
+    to: "/blog/barista_training"
   },
   {
     title: "How to write a Powerful SOP (Statement of Purpose)",

@@ -30,6 +30,9 @@
     },{
         title : "5 steps to apply for USA",
         to : "/blog/steps_to_apply_USA"
+    },{
+        title : "Free Barista Course!",
+        to : "/blog/barista_training"
     }
   ];
 

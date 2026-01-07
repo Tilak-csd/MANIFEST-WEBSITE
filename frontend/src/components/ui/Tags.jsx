@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 
 export default function Tags() {
     return (
-        <aside className="lg:w-[25%]">
-            <div className="bg-[#eef8ff] border border-red-400 rounded-2xl p-12 sticky top-8 shadow-sm">
+        <aside className="w-full lg:w-[25%]">
+            <div className="bg-[#eef8ff] border border-red-400 rounded-2xl w-full p-12 sticky top-8 shadow-sm">
                 <h2 className="text-3xl font-bold font-serif mb-6 text-slate-900 border-b-2 border-slate-200 pb-2">
                     Our Tags
                 </h2>

@@ -6,7 +6,7 @@ import Buttons from '../components/ui/Buttons'
 
 export default function USA_Visa_Apply_Blog() {
     return (
-        <div className="flex justify-between items-start bg-[#f0f7ff] p-6 md:p-12 text-slate-800">
+        <div className="flex justify-between items-start flex-col lg:flex-row bg-[#f0f7ff] p-6 md:p-12 text-slate-800">
             <BlogContent description='Get admitted to a SEVP-approved school, pay the SEVIS fee, complete the DS-160 form, attend your visa interview, and if approved, receive your visa and prepare to travel to the USA.'
                 heading='“5 Steps to Apply for a Student Visa to USA - 2025 Guide”'
                 url='https://ik.imagekit.io/fsso0s4pw/Blog/visa.webp'>

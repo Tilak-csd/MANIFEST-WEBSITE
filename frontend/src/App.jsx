@@ -17,6 +17,7 @@ import Gallery from "./pages/Gallery"
 import OurTeamSection from "./pages/Our_Team"
 import SOP_Writing_Blog from "./pages/SOP_Writing_Blog"
 import USA_Visa_Apply_Blog from "./pages/USA_Visa_Apply_Blog"
+import Free_Barista_Blog from "./pages/Free_Barista_Blog"
 import NotFound from "./pages/NotFound"
 
 
@@ -32,7 +33,7 @@ export default function App() {
         <Route path='/blog' element={<Blogs />} />
         <Route path='/blog/sop_writing' element={<SOP_Writing_Blog />} />
         <Route path='/blog/steps_to_apply_USA' element={<USA_Visa_Apply_Blog />} />
-
+        <Route path='/blog/barista_training' element={<Free_Barista_Blog />} />
 
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/country/usa' element={<USA />} />
