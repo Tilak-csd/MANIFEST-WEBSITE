@@ -15,7 +15,8 @@ import Navbar from "./components/layout/Navbar"
 import Footer from "./components/layout/Footer"
 import Gallery from "./pages/Gallery"
 import OurTeamSection from "./pages/Our_Team"
-import SOPLandingPage from "./pages/SOPLandingPage"
+import SOP_Writing_Blog from "./pages/SOP_Writing_Blog"
+import USA_Visa_Apply_Blog from "./pages/USA_Visa_Apply_Blog"
 import NotFound from "./pages/NotFound"
 
 
@@ -29,7 +30,8 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/blog' element={<Blogs />} />
-        <Route path='/blog/sop_writing' element={<SOPLandingPage />} />
+        <Route path='/blog/sop_writing' element={<SOP_Writing_Blog />} />
+        <Route path='/blog/steps_to_apply_USA' element={<USA_Visa_Apply_Blog />} />
 
 
         <Route path='/gallery' element={<Gallery />} />

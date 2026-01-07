@@ -1,5 +1,6 @@
 import React from 'react'
 import { tags } from '../../data/BlogData'
+import { NavLink } from 'react-router-dom'
 
 export default function Tags() {
     return (
@@ -11,12 +12,12 @@ export default function Tags() {
                 <ul className="space-y-1">
                     {tags.map((tag, index) => (
                         <li key={index}>
-                            <a
-                                href="#"
+                            <NavLink
+                                to={tag.to}
                                 className="text-[#334e68] hover:text-[#005bb7] transition-colors text-lg block"
                             >
-                                {tag}
-                            </a>
+                                {tag.title}
+                            </NavLink>
                         </li>
                     ))}
                 </ul>

@@ -4,12 +4,13 @@ import Tags from '../components/ui/Tags';
 import { Download } from 'lucide-react';
 // import Sample_PDF from '../../public/download/Sample_SOP.pdf'
 
-const SOPLandingPage = () => {
+const SOP_Writing_Blog = () => {
+    
 
     return (
         <div className="flex justify-between items-start bg-[#f0f7ff] p-6 md:p-12 text-slate-800">
 
-            <BlogContent>
+            <BlogContent heading='“How to write a Powerful SOP (Statement of Purpose)”' description='A strong SOP highlights your goals, reasons for choosing the course, and what drives you. It should be clear, personal, and show how the program fits your future plans—making your application memorable and impactful.' url='https://ik.imagekit.io/fsso0s4pw/Blog/sop_writing.webp'>
                 {/* Details Section */}
                 <div className='mb-6'>
                     <h2 className="text-3xl font-bold font-serif text-blue-600 mb-4">What is SOP?</h2>
@@ -102,4 +103,4 @@ const SOPLandingPage = () => {
     );
 };
 
-export default SOPLandingPage;
+export default SOP_Writing_Blog;
