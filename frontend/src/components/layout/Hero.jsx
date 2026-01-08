@@ -25,7 +25,7 @@ const Hero = () => {
         initial={{opacity:0, y:40}}
         whileInView={{opacity:1, y:0}}
         viewport={{once:true}}
-        transition={{duration:0.6, delay:.2}}
+        transition={{duration:0.6, delay:.2, ease:"ease-out"}}
         className="text-4xl font-bold md:text-6xl lg:text-7xl font-serif">
           Clear Your Vision <br /> 
           {/* <span className="mt-2 text-3xl md:4xl lg:text-5xl block">Manifest Your Future</span> */}
@@ -36,7 +36,7 @@ const Hero = () => {
          initial={{opacity:0, y:40}}
         whileInView={{opacity:1, y:0}}
         viewport={{once:true}}
-        transition={{duration:0.6, delay:.3}}
+        transition={{duration:0.6, delay:.3, ease:"ease-out"}}
         className="max-w-2xl text-md mb-4 font-light md:text-lg lg:text-xl">
           Helping students and professionals succeed in over 8 countries with a 98% visa success rate.
         </motion.p>
@@ -45,7 +45,7 @@ const Hero = () => {
         <motion.div  initial={{opacity:0, y:40}}
         whileInView={{opacity:1, y:0}}
         viewport={{once:true}}
-        transition={{duration:0.6, delay:.4}}>
+        transition={{duration:0.6, delay:.4, ease:"ease-out"}}>
         <Buttons label={"Get Start Now"} to={'/contact'}></Buttons>
         </motion.div>
       </div>
