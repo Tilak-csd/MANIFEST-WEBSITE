@@ -65,13 +65,13 @@ export const blogs = [
   },
   {
     title: "How to write a Powerful SOP (Statement of Purpose)",
-    description: "Write an SOP that gets noticed. Simple structure, expert tips, and examples to help you succeed in 2025.",
+    description: "A strong SOP highlights your goals, reasons for choosing the course, and what drives you. It should be clear, personal, and show how the program fits your future plans—making your application memorable and impactful.",
     img: "https://ik.imagekit.io/fsso0s4pw/Blog/SOP.webp",
     to: "/blog/sop_writing"
   },
   {
     title: "5 Steps to Apply for a Student Visa to USA - 2025 Guide",
-    description: "Dreaming of studying in USA? Here’s a step-by-step guide that walks you through the entire student vida process-from preparing documents to receiving your visa approval in 2025.",
+    description: "Get admitted to a SEVP-approved school, pay the SEVIS fee, complete the DS-160 form, attend your visa interview, and if approved, receive your visa and prepare to travel to the USA.",
     img: "https://ik.imagekit.io/fsso0s4pw/Blog/visa.webp",
     to: "/blog/Usa_apply_steps"
   }
