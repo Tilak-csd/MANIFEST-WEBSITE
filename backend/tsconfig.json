@@ -1,20 +1,12 @@
 {
   "compilerOptions": {
-
+    "target": "ES2020",
+    "module": "CommonJS",
     "rootDir": "./src",
     "outDir": "./dist",
-
-    "module": "nodenext",
-    "target": "esnext",
-    "moduleResolution": "nodenext",
-
-    "allowImportingTsExtensions": false,
-    "noEmit": false,
-  
-
-   
     "strict": true,
-    "verbatimModuleSyntax": true,
-    "skipLibCheck": true,
-  } 
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
 }

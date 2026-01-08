@@ -1,6 +1,6 @@
-import app from './app'
+import app from "./app";
 
 app.listen(5000, ()=>{
-    console.log("I am Live.");
+    console.log("I am Live at 5000");
     
 })
