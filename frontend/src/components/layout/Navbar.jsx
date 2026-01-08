@@ -19,7 +19,7 @@ export default function Navbar() {
     return (
         <div className="sticky top-0 z-50 w-full font-poppins bg-white shadow-sm">
             {/* Navbar itself */}
-            <div className={`relative flex justify-between md:h-30 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
+            <div className={`relative flex justify-between md:h-30 items-center h-20 w-full md:px-8 px-4 border-b md:border-0 border-gray-500 z-20`}>
 
                 {/* Logo */}
                 <NavLink to='/' className="flex justify-center items-center cursor-pointer md:w-[10%]">
@@ -39,7 +39,7 @@ export default function Navbar() {
 
             {/* Mobile Menu behind navbar */}
             <div
-                className={`absolute lg:hidden flex justify-center items-center flex-col gap-5 top-[60px] left-0 w-full h-[calc(100vh-60px)] bg-gray-500 z-10 transition-all duration-500 ease-in-out text-black
+                className={`absolute lg:hidden flex justify-center items-center flex-col gap-5 top-[60px] left-0 w-full h-[calc(100vh-60px)] bg-white z-10 transition-all duration-500 ease-in-out text-black
           ${open ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'} `} >
                 <MobileNavlink setOpen={setOpen} />
             </div>
