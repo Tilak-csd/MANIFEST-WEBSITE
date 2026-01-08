@@ -87,10 +87,10 @@ function MobileNavlink({ setOpen }) {
                             to={links.to}
                             scroll={el => scrollWithOffset(el)}
                             onClick={() => setOpen(false)}
-                            className="group relative text-white transition duration-300"
+                            className="group relative text-black transition duration-300"
                         >
                             {links.title}
-                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
                         </NavHashLink>
                     </li>
                 )
@@ -112,7 +112,7 @@ function OpenMenu({ setOpen }) {
 
 function CloseMenu({ setOpen }) {
     return (
-        <div className="p-2 cursor-pointer lg:hidden text-white" onClick={() => setOpen(prev => !prev)}>
+        <div className="p-2 cursor-pointer lg:hidden text-black" onClick={() => setOpen(prev => !prev)}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
