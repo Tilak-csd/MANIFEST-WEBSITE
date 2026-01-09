@@ -19,13 +19,15 @@ const Footer = () => {
               {about.description}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors">
+              <a href="https://www.instagram.com/manifest_edu_consultancy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank' className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors">
+              <a href="https://www.facebook.com/nzouconsultingcentre" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors" target='_blank'>
                 <Facebook size={18} />
               </a>
-              <a href="#" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors">
+              <a href="https://www.linkedin.com/company/journey-international-education/" 
+              target='_blank'
+              className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors">
                 <Linkedin size={18} />
               </a>
               <a href="#" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors flex items-center justify-center">
