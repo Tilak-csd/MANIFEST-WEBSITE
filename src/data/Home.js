@@ -73,6 +73,6 @@ export const blogs = [
     title: "5 Steps to Apply for a Student Visa to USA - 2025 Guide",
     description: "Get admitted to a SEVP-approved school, pay the SEVIS fee, complete the DS-160 form, attend your visa interview, and if approved, receive your visa and prepare to travel to the USA.",
     img: "https://ik.imagekit.io/fsso0s4pw/Blog/visa.webp",
-    to: "/blog/Usa_apply_steps"
+    to: "/blog/steps_to_apply_USA"
   }
 ]

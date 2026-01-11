@@ -25,7 +25,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/nzouconsultingcentre" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors" target='_blank'>
                 <Facebook size={18} />
               </a>
-              <a href="https://www.linkedin.com/company/journey-international-education/" 
+              <a href="https://np.linkedin.com/company/journey-international-education" 
               target='_blank'
               className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors">
                 <Linkedin size={18} />

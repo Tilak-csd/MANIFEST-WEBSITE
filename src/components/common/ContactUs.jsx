@@ -79,7 +79,7 @@ const ContactUs = () => {
               {/* Social Icons */}
               <div className="flex gap-6 pt-4">
                 <a
-                  href="https://instagram.com/yourhandle"
+                  href="https://www.instagram.com/manifest_edu_consultancy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
@@ -88,7 +88,7 @@ const ContactUs = () => {
                 </a>
 
                 <a
-                  href="https://facebook.com/yourpage"
+                  href="https://www.facebook.com/nzouconsultingcentre"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
@@ -106,7 +106,7 @@ const ContactUs = () => {
                 </a>
 
                 <a
-                  href="https://linkedin.com/company/yourprofile"
+                  href="https://www.linkedin.com/company/journey-international-education/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
