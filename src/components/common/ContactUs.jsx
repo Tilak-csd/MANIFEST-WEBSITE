@@ -1,26 +1,79 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Instagram, Facebook, MessageCircle, Linkedin } from 'lucide-react';
+import { 
+  Mail, Phone, MapPin, Instagram, Facebook, 
+  MessageCircle, Linkedin, CheckCircle2, XCircle, Loader2 
+} from 'lucide-react';
+import axios from 'axios';
 
 const ContactUs = () => {
   const [username, setUsername] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
   const [message, setMessage] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-// API Logic
-  const submitEvent = async ()=>{
-    alert("The Contact Page is User Testing Phase, Please Try Again Later!")
+  const [modal, setModal] = useState({ show: false, success: false, text: "" });
 
-    setUsername("")
-    setEmail("")
-    setPhone("")
-    setMessage("")
+  // API Logic
 
-  }
+  const API_URL = "https://manifestedu.vercel.app/api/v1/contactForm";
+
+  const submitEvent = async (e) => {
+    e.preventDefault();
+
+    if (!username || !email || !phone || !message) {
+      setModal({ show: true, success: false, text: "All fields are required." });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await axios.post(API_URL, {
+        name: username,
+        email: email,
+        phone: phone,
+        message: message
+      });
+
+      setModal({ show: true, success: true, text: response.data.message });
+      setUsername(""); setEmail(""); setPhone(""); setMessage("");
+    } catch (error) {
+      setModal({
+        show: true,
+        success: false,
+        text: error.response?.data?.message || "Server error. Please try again."
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
 
   return (
     <div className="min-h-screen bg-slate-100 py-8 px-4 font-sans ">
+
+      {/* Feedback Modal */}
+      {modal.show && (
+        <div className="fixed inset-0 z-[70] flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+          <div className="bg-white p-8 rounded-3xl shadow-2xl max-w-sm w-full text-center animate-in zoom-in duration-200">
+            {modal.success ? (
+              <CheckCircle2 className="w-16 h-16 text-green-500 mx-auto mb-4" />
+            ) : (
+              <XCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
+            )}
+            <h3 className="text-2xl font-bold mb-2">{modal.success ? "Sent!" : "Failed"}</h3>
+            <p className="text-slate-600 mb-6">{modal.text}</p>
+            <button
+              onClick={() => setModal({ ...modal, show: false })}
+              className="w-full py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-black transition-all"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="max-w-7xl mx-auto flex justify-center items-center flex-col">
         {/* Header Section */}
         <header className="text-center mb-8">
@@ -39,36 +92,47 @@ const ContactUs = () => {
                 type="text"
                 placeholder="Name"
                 value={username}
-                onChange={(e)=>{setUsername(e.target.value)}}
+                onChange={(e) => { setUsername(e.target.value) }}
                 className="w-full p-3 border border-red-400 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 placeholder-gray-400"
               />
               <input
                 type="email"
                 placeholder="Email"
                 value={email}
-                onChange={(e)=>{setEmail(e.target.value)}}
+                onChange={(e) => { setEmail(e.target.value) }}
                 className="w-full p-3 border border-red-400 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 placeholder-gray-400"
               />
               <input
                 type="tel"
                 placeholder="Phone"
                 value={phone}
-                onChange={(e)=>{setPhone(e.target.value)}}
+                onChange={(e) => { setPhone(e.target.value) }}
                 className="w-full p-3 border border-red-400 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 placeholder-gray-400"
               />
               <textarea
                 placeholder="Message / Query"
                 rows="1"
-                vlaue={message}
-                onChange={(e)=>{setMessage(e.target.value)}}
+                value={message}
+                onChange={(e) => { setMessage(e.target.value) }}
                 className="w-full p-3 border border-red-400 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 placeholder-gray-400"
               ></textarea>
               <button
-              onClick={submitEvent}
-                // add the functionality for the contact page.
-                className="bg-red-500 cursor-pointer text-white px-8 py-2 rounded-md hover:bg-black transition-colors uppercase text-sm"
+                onClick={submitEvent}
+                disabled={isSubmitting}
+                className={`group relative w-full py-4 rounded-2xl font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-3 shadow-lg 
+                  ${isSubmitting 
+                    ? 'bg-slate-400 cursor-not-allowed scale-[0.98]' 
+                    : 'bg-red-600 text-white hover:bg-slate-900 hover:shadow-red-200 active:scale-95'
+                  }`}
               >
-                Submit
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                    <span>Sending...</span>
+                  </>
+                ) : (
+                  <span>Submit</span>
+                )} 
               </button>
             </div>
           </div>
