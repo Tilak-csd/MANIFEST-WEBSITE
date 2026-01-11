@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Instagram, Facebook, MessageCircle, Linkedin } from 'lucide-react';
 
 const ContactUs = () => {
+  const [username, setUsername] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [message, setMessage] = useState("")
 
 // API Logic
+  const submitEvent = async ()=>{
+    alert("The Contact Page is User Testing Phase, Please Try Again Later!")
+
+    setUsername("")
+    setEmail("")
+    setPhone("")
+    setMessage("")
+
+  }
 
 
   return (
@@ -25,24 +38,33 @@ const ContactUs = () => {
               <input
                 type="text"
                 placeholder="Name"
+                value={username}
+                onChange={(e)=>{setUsername(e.target.value)}}
                 className="w-full p-3 border border-red-400 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 placeholder-gray-400"
               />
               <input
                 type="email"
                 placeholder="Email"
+                value={email}
+                onChange={(e)=>{setEmail(e.target.value)}}
                 className="w-full p-3 border border-red-400 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 placeholder-gray-400"
               />
               <input
                 type="tel"
                 placeholder="Phone"
+                value={phone}
+                onChange={(e)=>{setPhone(e.target.value)}}
                 className="w-full p-3 border border-red-400 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 placeholder-gray-400"
               />
               <textarea
                 placeholder="Message / Query"
                 rows="1"
+                vlaue={message}
+                onChange={(e)=>{setMessage(e.target.value)}}
                 className="w-full p-3 border border-red-400 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 placeholder-gray-400"
               ></textarea>
               <button
+              onClick={submitEvent}
                 // add the functionality for the contact page.
                 className="bg-red-500 cursor-pointer text-white px-8 py-2 rounded-md hover:bg-black transition-colors uppercase text-sm"
               >
