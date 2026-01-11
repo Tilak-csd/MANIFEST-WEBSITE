@@ -19,7 +19,7 @@ const AboutSection = () => {
                         transition={{ duration: 0.6 }}
                         className="text-2xl md:text-4xl font-serif font-extrabold text-[#D32F2F] tracking-tight uppercase"
                     >
-                        Welcome to the Manifest
+                        Welcome to Manifest
                     </motion.h2>
 
                     <motion.p
