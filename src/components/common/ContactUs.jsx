@@ -60,7 +60,7 @@ const ContactUs = () => {
               <div className="flex items-center gap-4 text-sm md:text-md">
                 <Mail className="text-red-500 w-6 h-6" />
                 <span>
-                  journeyinteducation@gmail.com
+                  manifestedu11@gmail.com
                 </span>
               </div>
 
