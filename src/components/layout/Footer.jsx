@@ -30,7 +30,7 @@ const Footer = () => {
               className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors flex items-center justify-center">
+              <a href="https://wa.me/9851363253" className="hover:bg-black hover:text-white bg-white rounded-full p-2 text-black transition-colors flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
