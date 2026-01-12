@@ -50,7 +50,7 @@ export const footerData = {
   ],
   contact: {
     phones: ["01-5922253", "9851363253"],
-    email: "mainfestedu11@gmail.com",
+    email: "manifestedu11@gmail.com",
     address: "Putalisadak (Opposite to Star Mall), Kathmandu"
   }
 }; 
