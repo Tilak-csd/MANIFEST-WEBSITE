@@ -119,10 +119,10 @@ const ContactUs = () => {
               <button
                 onClick={submitEvent}
                 disabled={isSubmitting}
-                className={`group relative w-full py-4 rounded-2xl font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-3 shadow-lg 
+                className={`group relative w-full py-4 rounded-md uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-3 shadow-lg cursor-pointer
                   ${isSubmitting 
-                    ? 'bg-slate-400 cursor-not-allowed scale-[0.98]' 
-                    : 'bg-red-600 text-white hover:bg-slate-900 hover:shadow-red-200 active:scale-95'
+                    ? 'bg-slate-400 scale-[0.98]' 
+                    : 'bg-red-600 text-white hover:bg-black hover:shadow-red-200 active:scale-95'
                   }`}
               >
                 {isSubmitting ? (
@@ -143,7 +143,7 @@ const ContactUs = () => {
 
             <div className="space-y-4">
               {/* Email */}
-              <div className="flex items-center gap-4 text-sm md:text-md">
+              <div className="flex items-center gap-4 text-sm md:text-[1.1rem]">
                 <Mail className="text-red-500 w-6 h-6" />
                 <span>
                   manifestedu11@gmail.com
@@ -151,14 +151,14 @@ const ContactUs = () => {
               </div>
 
               {/* Phone */}
-              <div className="flex items-center gap-4 text-sm md:text-md">
+              <div className="flex items-center gap-4 text-sm md:text-[1.1rem]">
                 <Phone className="text-red-500 w-6 h-6" />
                 <span>01-5922253, 9851363253</span>
               </div>
 
               {/* Address */}
-              <div className="flex items-start gap-4 text-sm md:text-md">
-                <MapPin className="text-red-500 w-8 h-8" />
+              <div className="flex items-start gap-4 text-sm md:text-[1.1rem]">
+                <MapPin className="text-red-500 w-7 h-7" />
                 <span>Putalisadak (Opposite to Star Mall), Kathmandu</span>
               </div>
 
@@ -170,7 +170,7 @@ const ContactUs = () => {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
                 >
-                  <Instagram className="w-6 h-6 text-red-500" />
+                  <Instagram className="w-7 h-7 text-red-500" />
                 </a>
 
                 <a
@@ -179,7 +179,7 @@ const ContactUs = () => {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
                 >
-                  <Facebook className="w-6 h-6 text-red-500" />
+                  <Facebook className="w-7 h-7 text-red-500" />
                 </a>
 
                 <a
@@ -188,7 +188,7 @@ const ContactUs = () => {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
                 >
-                  <MessageCircle className="w-6 h-6 text-red-500" />
+                  <MessageCircle className="w-7 h-7 text-red-500" />
                 </a>
 
                 <a
@@ -197,7 +197,7 @@ const ContactUs = () => {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
                 >
-                  <Linkedin className="w-6 h-6 text-red-500" />
+                  <Linkedin className="w-7 h-7 text-red-500" />
                 </a>
               </div>
             </div>
