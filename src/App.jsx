@@ -18,6 +18,7 @@ import OurTeamSection from "./pages/Our_Team"
 import SOP_Writing_Blog from "./pages/SOP_Writing_Blog"
 import USA_Visa_Apply_Blog from "./pages/USA_Visa_Apply_Blog"
 import Free_Barista_Blog from "./pages/Free_Barista_Blog"
+import VercelAnalytics_Guide from "./pages/VercelAnalytics_Guide"
 import NotFound from "./pages/NotFound"
 
 
@@ -45,8 +46,7 @@ export default function App() {
         <Route path='/country/japan' element={<Japan />} />
         <Route path='/country/france' element={<France />} />
         <Route path='/ourteam' element={<OurTeamSection />} />
-
-
+        <Route path='/docs/analytics/getting-started' element={<VercelAnalytics_Guide />} />
 
         <Route path='*' element={<NotFound />} />
       </Routes>
