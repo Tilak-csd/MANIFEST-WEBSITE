@@ -18,19 +18,19 @@ const TrustedSection = () => {
             {/* Content Container */}
             <div className="relative z-10 text-center px-4 w-full md:max-w-5xl mx-auto text-white">
                 <motion.h1
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
                     className="text-2xl md:text-4xl font-bold mb-4 font-serif drop-shadow-lg">
                     Trusted by More Than 5000 Students
                 </motion.h1>
 
                 <motion.p
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-sm md:text-lg font-light mb-8 opacity-90 leading-relaxed">
                     We offer expert teaching from highly qualified professionals, continuous
                     personalized guidance, and a dedicated support team focused on helping
@@ -39,9 +39,11 @@ const TrustedSection = () => {
 
                 {/* Hover Animation Button */}
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.4 }}>
+                    viewport={{ once: true}}
+                    transition={{duration: 0.8, delay:.4}}
+                    >
                     <NavLink to="/contact"
                         className='py-3 px-6 rounded-md cursor-pointer font-semibold bg-red-500 hover:bg-white hover:text-red-500 text-white hover:scale-105'>
                         Learn More

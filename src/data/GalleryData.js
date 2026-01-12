@@ -70,6 +70,26 @@ export const galleryData = [
     src: "../images/Gallery/Congratulation/susmita_chaudhary.avif",
     title: "Susmita Chaudhary"
   },
+  {
+    category: "congratulation",
+    src: "../images/Gallery/Congratulation/ambika_tamang.avif",
+    title: "Ambika Tamang"
+  },
+  {
+    category: "congratulation",
+    src: "../images/Gallery/Congratulation/anu_chaulagain.avif",
+    title: "Anu Chaulagain"
+  },
+  {
+    category: "congratulation",
+    src: "../images/Gallery/Congratulation/shital_balami.avif",
+    title: "Shital Balami"
+  },
+  {
+    category: "congratulation",
+    src: "../images/Gallery/Congratulation/sujita_syangtan.avif",
+    title: "Sujita Syangtan"
+  },
 
   // Flights Category
   {

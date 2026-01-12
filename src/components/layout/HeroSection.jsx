@@ -26,30 +26,30 @@ const HeroSection = ({ pageName = "", to = "", Heading = "", description = "", u
                     {/* Content (Optional) */}
                     <div className="relative h-full flex items-center justify-center flex-col gap-4">
                         <motion.h2
-                            initial={{ opacity: 0, y: 40 }}
+                            initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, amount: .6 }}
-                            transition={{ duration: .6, delay: .2 }}
+                            viewport={{ once: true}}
+                            transition={{ duration: .8 }}
                             className="text-white text-center text-3xl md:text-5xl font-bold">
 
                             {Heading}
 
                         </motion.h2>
                         <motion.p
-                            initial={{ opacity: 0, y: 40 }}
+                            initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, amount: .6 }}
-                            transition={{ duration: .6, delay: .3 }}
+                            viewport={{ once: true}}
+                            transition={{ duration: .8, delay: .2 }}
                             className='text-white text-md md:text-lg text-center font-medium'>
 
                             {description}
 
                         </motion.p>
                         <motion.div
-                        initial={{opacity:0, y:40}}
-                        whileInView={{opacity:1, y:0}}
-                        viewport={{once:true, amount:.6}}
-                        transition={{duration:.6, delay:.4}}>
+                        initial={{opacity:0, y : 20}}
+                        whileInView={{opacity:1, y : 0}}
+                        viewport={{once:true}}
+                        transition={{duration:.8, delay:.4}}>
                         <Buttons label={'Apply Now'} to={'/contact'} />
                         </motion.div>
                     </div>
