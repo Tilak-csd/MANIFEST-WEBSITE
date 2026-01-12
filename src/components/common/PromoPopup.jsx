@@ -9,15 +9,15 @@ const PromoPopup = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // 1. Check if the user has already seen the popup
-    const hasSeenPopup = localStorage.getItem('home_popup_seen');
+    // 1. Check if the user has seen the popup IN THIS TAB SESSION
+    const hasSeenPopup = sessionStorage.getItem('home_popup_seen');
 
     if (!hasSeenPopup) {
-      // 2. If not seen, wait 2 seconds then open it
+      // 2. Wait 2 seconds then open it
       const timer = setTimeout(() => {
         setIsOpen(true);
-        // 3. Immediately mark it as seen so it won't trigger again on refresh
-        localStorage.setItem('home_popup_seen', 'true');
+        // 3. Mark as seen for this session only
+        sessionStorage.setItem('home_popup_seen', 'true');
       }, 2000);
 
       return () => clearTimeout(timer);
