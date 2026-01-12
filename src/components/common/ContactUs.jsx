@@ -3,6 +3,8 @@ import {
   Mail, Phone, MapPin, Instagram, Facebook, 
   MessageCircle, Linkedin, CheckCircle2, XCircle, Loader2 
 } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 import axios from 'axios';
 
 const ContactUs = () => {
@@ -198,6 +200,18 @@ const ContactUs = () => {
                   className="hover:scale-110 transition-transform"
                 >
                   <Linkedin className="w-7 h-7 text-red-500" />
+                </a>
+                <a
+                  href="https://www.tiktok.com/@manifestedu1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition-transform"
+                >
+                  <FontAwesomeIcon
+                  icon={faTiktok}
+                  size='xl'
+                  className="text-red-500"
+                />
                 </a>
               </div>
             </div>
