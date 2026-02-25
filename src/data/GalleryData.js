@@ -57,6 +57,36 @@ export const galleryData = [
   // Congratulation Category
   {
     category: "congratulation",
+    src: "../images/Gallery/Congratulation/bishnu-chapagain-manifest-education-consultancy.webp",
+    title: "Bishnu Chapagain"
+  },
+  {
+    category: "congratulation",
+    src: "../images/Gallery/Congratulation/kamala-limbu-manifest-education-consultancy.webp",
+    title: "Kamal Limbu"
+  },
+  {
+    category: "congratulation",
+    src: "../images/Gallery/Congratulation/manish-khadka-manifest-education-consultancy.webp",
+    title: "Manish Khadka"
+  },
+  {
+    category: "congratulation",
+    src: "../images/Gallery/Congratulation/pratistha-chaudhary-manifest-education-consultancy.webp",
+    title: "Pratistha Chaudhary"
+  },
+  {
+    category: "congratulation",
+    src: "../images/Gallery/Congratulation/samjhana-khatri-manifest-education-consultancy.webp",
+    title: "Samjhana Khatri"
+  },
+  {
+    category: "congratulation",
+    src: "../images/Gallery/Congratulation/surendra-shrestha-manifest-education-consultancy.webp",
+    title: "Surendra Shrestha"
+  },
+  {
+    category: "congratulation",
     src: "../images/Gallery/Congratulation/laxmi_bista_chhetri.avif",
     title: "Laxmi Bista Chhetri"
   },
